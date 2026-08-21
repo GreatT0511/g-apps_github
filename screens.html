@@ -124,9 +124,9 @@
   <section class="page-hero">
     <div class="container">
       <span class="section-label">REFERENCE</span>
-      <h1 class="page-hero-title">図解 画面の見方 — 3つの画面が分かれば迷わない</h1>
+      <h1 class="page-hero-title">図解 画面の見方 — 4つの画面が分かれば迷わない</h1>
       <p class="page-hero-description">
-        GitHubで今日使う画面は実質3つ：ホーム（ダッシュボード）・リポジトリの中・設定（Settings）。
+        GitHubで今日使う画面は実質4つ：ホーム（ダッシュボード）・リポジトリ作成・リポジトリの中・設定（Settings）。
         それぞれの画面のどこが何をする場所か、番号つきの実画面で確認できます。迷子になったら、このページに戻ってきてください。
       </p>
     </div>
@@ -154,13 +154,37 @@
         <li><strong>Feed</strong> — 自分のリポジトリやフォローした人の動きが流れる掲示板。見るだけの場所で、操作は不要です</li>
       </ol>
 
-      <div class="section-header" id="scr-2" style="margin-top: var(--space-16);">
+      <div class="section-header" id="scr-new" style="margin-top: var(--space-16);">
         <span class="section-label">画面2</span>
+        <h2 class="section-title">リポジトリ作成（New repository） — 決めるのは3つだけ</h2>
+      </div>
+      <figure class="screenshot">
+        <img src="img/screens/02_new_repo.png" alt="New repository（リポジトリ作成）画面の各部に番号を振った解説図">
+        <figcaption>画面2：「＋」→ New repository で開く作成画面。入力は上から順に</figcaption>
+      </figure>
+      <ol class="bullet-list numbered">
+        <li><strong>Owner（所有者）</strong> — 誰の箱として作るか。ふつうは自分のアカウントのままでOK（組織に入っていると選択肢が増えます）</li>
+        <li><strong>Repository name（名前）</strong> — 半角英数とハイフンで。<strong>URLの一部になります</strong>。下に緑で「is available」と出れば使える名前です</li>
+        <li><strong>Description（説明）</strong> — 任意。書いておくとリポジトリのAbout欄に表示され、あとで自分が助かります</li>
+        <li><strong>Choose visibility（公開範囲）</strong> — <strong>迷ったらPrivate（非公開）</strong>。Publicにするのは§4のWeb公開用リポジトリだけ、が今日のルールです</li>
+        <li><strong>Add README</strong> — <strong>常にOn</strong>にします。箱の表紙（§2）がある状態で始められます</li>
+        <li><strong>.gitignore／license</strong> — プログラム開発用の設定です。<strong>どちらも「No」のままでOK</strong>。触りません</li>
+        <li><strong>Create repository</strong> — 作成ボタン。押した瞬間に箱ができて、画面3に移動します</li>
+      </ol>
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">check_circle</span>
+        <div>
+          <strong>決めるのは実質①名前 ②公開範囲 ③README Onの3つ。</strong>それ以外は初期値のままで大丈夫です。「短く・覚えやすく・半角」の名前だけ、作る前に決めておきましょう。
+        </div>
+      </div>
+
+      <div class="section-header" id="scr-2" style="margin-top: var(--space-16);">
+        <span class="section-label">画面3</span>
         <h2 class="section-title">リポジトリの中 — いちばん長くいる画面</h2>
       </div>
       <figure class="screenshot">
         <img src="img/screens/02_repotop.png" alt="リポジトリトップ画面の各部に番号を振った解説図">
-        <figcaption>画面2：リポジトリを開いた画面。ファイル一覧と履歴の入口が並ぶ</figcaption>
+        <figcaption>画面3：リポジトリを開いた画面。ファイル一覧と履歴の入口が並ぶ</figcaption>
       </figure>
       <ol class="bullet-list numbered">
         <li><strong>リポジトリ名＋公開状態</strong> — いまどの箱にいるか。<strong>Private＝非公開／Public＝全世界公開</strong>。作業前にここを一瞥する癖を</li>
@@ -175,12 +199,12 @@
       </ol>
 
       <div class="section-header" id="scr-3" style="margin-top: var(--space-16);">
-        <span class="section-label">画面3</span>
+        <span class="section-label">画面4</span>
         <h2 class="section-title">Settings（設定） — 触るのは4か所だけ</h2>
       </div>
       <figure class="screenshot">
         <img src="img/screens/03_settings.png" alt="リポジトリのSettings画面の各部に番号を振った解説図">
-        <figcaption>画面3：リポジトリのSettings。左が設定の目次、右が設定内容</figcaption>
+        <figcaption>画面4：リポジトリのSettings。左が設定の目次、右が設定内容</figcaption>
       </figure>
       <ol class="bullet-list numbered">
         <li><strong>General</strong> — 基本設定。開いた直後はこのページが表示されています</li>
