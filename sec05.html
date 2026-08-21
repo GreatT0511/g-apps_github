@@ -201,7 +201,7 @@ AIを使ったときは、コミットメッセージに
       <ol class="bullet-list numbered">
         <li>§1の手順で生徒がアカウントを作る（13歳以上・ユーザー名ルールは§7の配布資料で）</li>
         <li>先生のテンプレリポジトリのURLを配り、<strong>Use this template → Create a new repository</strong>。名前は「tankyu-2026」等に統一、<strong>Private</strong>を選ばせる</li>
-        <li>生徒が <strong>Settings → Collaborators</strong> で先生を招待する（これで先生は全員の箱を見られます）</li>
+        <li>各リポジトリの <strong>Settings → Collaborators</strong> で先生を招待してもらう——<strong>Privateのままでも、招待されたCollaboratorは中を見られます</strong>。公開せずに先生と共有できるのがこの仕組みの肝です</li>
         <li>初回のワーク: READMEの「いまの問い」を書いてコミット——<strong>これが探究の最初の履歴</strong>になります</li>
       </ol>
 
@@ -209,6 +209,13 @@ AIを使ったときは、コミットメッセージに
         <span class="material-symbols-outlined notice-icon">visibility</span>
         <div>
           <strong>公開範囲の原則。</strong>探究リポジトリは<strong>Private＋先生をCollaborator</strong>が基本形。校外に見せたい成果ができたら、そのときに「公開用リポジトリへ移す」を生徒と一緒に判断します（§7のルール参照）。最初からPublicにしない。
+        </div>
+      </div>
+
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">groups</span>
+        <div>
+          <strong>おすすめは「探究グループに1リポジトリ」。</strong>個人リポジトリ×40人だと、先生は40件の招待を受けて40の箱を巡回することになります。<strong>グループ探究なら「1グループ1リポジトリ」にして、先生はグループの箱のCollaboratorになる</strong>のがおすすめです——招待はグループ数だけで済み、見取りの巡回先も減ります。グループ内では生徒同士もCollaboratorとして入り、誰が・何を・なぜ変えたかはコミット履歴に個人名で残るので、<strong>共同編集でも個人の貢献は見えます</strong>（§6のプルリクエスト・レビューにもそのままつながる形です）。個人課題のときだけ1人1リポジトリを使う、という使い分けで十分です。
         </div>
       </div>
 
