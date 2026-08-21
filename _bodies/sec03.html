@@ -4,7 +4,7 @@
       <h1 class="page-hero-title">§3　ハンズオン① 教材の「最新版どれ?」をなくす</h1>
       <p class="page-hero-description">
         学年フォルダの「プリント_最終_改2_本当に最終.docx」問題を、リポジトリ1つで終わらせます。
-        置き場所は1つ、歴代の版は履歴に、変更の理由はコミットメッセージに。教科・分掌単位でそのまま使える型です。
+        このワークは<strong>§2で作った hello-github の続き</strong>でそのまま行います。新しい準備は不要、教材はこのページからコピペするだけです（10分）。
       </p>
     </div>
   </section>
@@ -12,67 +12,97 @@
   <section class="section">
     <div class="container container-content">
 
-      <p><strong>校務での使いどころ: </strong>学年・教科で共有するプリント、指導案、行事マニュアルの原本管理。</p>
-      <p><strong>使う機能: </strong>リポジトリ＋アップロード＋履歴（History）＋共同編集者（Collaborators）</p>
+      <p><strong>今日体験すること: </strong>プリントを1枚入れる → 配布後の訂正を2回する → 履歴と差分で「最新版が常に1つ」を確かめる。</p>
+      <p><strong>使う機能: </strong>Create new file＋編集（鉛筆マーク）＋履歴（History）＋差分表示</p>
 
       <div class="section-header" id="s3-1">
         <span class="section-label">3-1</span>
         <h2 class="section-title">完成イメージ</h2>
       </div>
       <ul class="bullet-list">
-        <li>リポジトリ <strong>sugaku-2nen</strong>（数学・中2教材）が非公開である</li>
-        <li>フォルダが単元ごとに分かれている（01_正負の数、02_文字式、…）</li>
-        <li>どのプリントも、Historyを見れば「いつ・誰が・なぜ変えたか」がわかる</li>
-        <li>教科の同僚2人が共同編集者として入っている</li>
+        <li>hello-github の中に「夏休みの課題」プリントが<strong>1つだけ</strong>ある（_最終_改2 のようなコピーはない）</li>
+        <li>Historyを見ると「初版 → 訂正① → 訂正②」が理由つきで並んでいる</li>
+        <li>訂正のコミットを開くと、<strong>変わった行だけが赤と緑で</strong>表示される</li>
       </ul>
 
       <div class="section-header" id="s3-2" style="margin-top: var(--space-16);">
         <span class="section-label">3-2</span>
-        <h2 class="section-title">手順1　箱を作ってファイルを入れる</h2>
+        <h2 class="section-title">手順1　プリントを1枚入れる（3分）</h2>
       </div>
       <ol class="bullet-list numbered">
-        <li>New repository → 名前は <strong>教科-学年</strong> の形（例: sugaku-2nen）→ <strong>Private</strong> → README付きで作成</li>
-        <li><strong>Add file → Upload files</strong> を開き、手元のプリント（Word・PDF・画像）を<strong>ドラッグ&ドロップ</strong></li>
-        <li>コミットメッセージに「2学期分の既存プリントを一括登録」と書いて確定</li>
-        <li>フォルダを作りたいときは、Add file → Create new file でファイル名の前に「01_正負の数/」のように<strong>フォルダ名＋スラッシュ</strong>を付けます</li>
+        <li>hello-github を開き、<strong>Add file → Create new file</strong></li>
+        <li>ファイル名: <strong>プリント_夏休みの課題.md</strong></li>
+        <li>下のプリント原稿を<strong>そのまま貼り付ける</strong>（書き換え不要）</li>
+        <li><strong>Commit changes...</strong> → メッセージ: <strong>「夏休み課題プリントを登録: 配布用の初版」</strong></li>
       </ol>
+      <div class="prompt-box">
+        <div class="prompt-box-header">
+          <span class="prompt-box-title">プリント原稿（そのまま貼り付け）</span>
+          <span class="prompt-box-hint">クリックでコピー</span>
+        </div>
+        <div class="prompt-content copyable"># 夏休みの課題について
+
+配布日: 7月18日 ／ 対象: 2年○組
+
+## 提出するもの
+- ワークブック p.10〜p.35
+- 自由研究レポート（1枚以上）
+
+## 提出日
+9月1日 に教室で回収します。
+
+## 注意
+- 名前を書いたか確認しましょう
+- なくした人は担任まで</div>
+      </div>
 
       <div class="section-header" id="s3-3" style="margin-top: var(--space-16);">
         <span class="section-label">3-3</span>
-        <h2 class="section-title">手順2　差し替えて、履歴を見る</h2>
+        <h2 class="section-title">手順2　配布後の訂正①（3分）</h2>
       </div>
+      <p>配布した後で、始業式の日程が変わったとします。ファイルを開いて<strong>鉛筆マーク</strong>で編集し、提出日の行を1か所だけ直します。</p>
       <ol class="bullet-list numbered">
-        <li>差し替えたいファイルのあるフォルダで Upload files → 同じファイル名で上げ直す（自動で「新しい版」になります）</li>
-        <li>コミットメッセージ: <strong>「第3問を差し替え: 試験範囲の変更に合わせるため」</strong></li>
-        <li>ファイル一覧上部の <strong>History</strong> を開く——歴代の版と理由が一覧になり、どの版にも戻せます</li>
+        <li>「9月1日」を<strong>「9月2日」</strong>に書き換える</li>
+        <li>Commit changes... → メッセージ: <strong>「提出日を9月2日に訂正: 始業式の日程変更のため」</strong></li>
+        <li>ファイル一覧上部の <strong>History</strong> を開く——初版と訂正①が理由つきで並んでいます</li>
       </ol>
-      <div class="notice-box">
-        <span class="material-symbols-outlined notice-icon">description</span>
-        <div>
-          <strong>WordとMarkdownの使い分け。</strong>Word・PDFも履歴管理はできますが、「どこが変わったか」の行単位比較はできません。<strong>これから新しく作る配布文書・手順書はMarkdown（.md）で書く</strong>と、変更箇所が色付きで見えるようになります。§2のテンプレの記法だけで十分です。
-        </div>
-      </div>
 
       <div class="section-header" id="s3-4" style="margin-top: var(--space-16);">
         <span class="section-label">3-4</span>
-        <h2 class="section-title">手順3　同僚を招待する</h2>
+        <h2 class="section-title">手順3　訂正②と、差分の見方（4分）</h2>
       </div>
+      <p>今度は国語科から「読書感想文も回収してほしい」と依頼が来たとします。</p>
       <ol class="bullet-list numbered">
-        <li>リポジトリの <strong>Settings → Collaborators → Add people</strong></li>
-        <li>同僚のユーザー名を入力して招待（相手にメールが届き、承認すると編集できるようになります）</li>
-        <li>招待した人にも§2の「コミットメッセージの型」を共有しておく——ここを揃えるのが運用のコツです</li>
+        <li>「提出するもの」に <strong>「- 読書感想文（1冊分）」</strong> の1行を追加</li>
+        <li>Commit changes... → メッセージ: <strong>「読書感想文を追加: 国語科からの回収依頼のため」</strong></li>
+        <li>History を開き、いまのコミットを<strong>クリック</strong>——追加した行が<strong>緑</strong>、消した行が<strong>赤</strong>で表示されます</li>
       </ol>
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">difference</span>
+        <div>
+          <strong>これが「最新版どれ?」の答えです。</strong>ファイルは常に1つ、過去の版は履歴に、変更の理由はメッセージに、変わった場所は色に。「_最終_改2」を作る理由が、もうどこにもありません。
+        </div>
+      </div>
 
+      <div class="work-section">
+        <h3>ワーク — ペアでHistoryを見せ合う（5分）</h3>
+        <p>隣の人とお互いのHistoryを開き、コミットメッセージが「未来の自分（来年この訂正の理由を忘れた自分）に通じるか」を確かめてください。早く終わったペアは、手元にある実物のプリントで同じ流れ（登録→1回訂正→History）をもう1周どうぞ。</p>
+      </div>
+
+      <div class="section-header" id="s3-5" style="margin-top: var(--space-16);">
+        <span class="section-label">3-5</span>
+        <h2 class="section-title">教室に持ち帰るときの型（あとで読めばOK）</h2>
+      </div>
+      <ul class="bullet-list">
+        <li><strong>箱の作り方: </strong>教科・分掌ごとに <strong>教科-学年</strong>（例: sugaku-2nen）の名前で <strong>Private</strong> リポジトリを1つ。フォルダは Add file → Create new file でファイル名の前に「01_正負の数/」のように<strong>フォルダ名＋スラッシュ</strong></li>
+        <li><strong>Word・PDFも入る: </strong>Add file → Upload files にドラッグ&ドロップ。同じファイル名で上げ直せば自動で「新しい版」になります。ただし行単位の色付き差分はMarkdownだけの特典——<strong>新しく作る配布文書はMarkdownで</strong></li>
+        <li><strong>同僚を入れる: </strong>Settings → Collaborators → Add people で招待し、§2の「コミットメッセージの型」を一緒に配る——ここを揃えるのが運用のコツです</li>
+      </ul>
       <div class="notice-box">
         <span class="material-symbols-outlined notice-icon">gpp_maybe</span>
         <div>
           <strong>置いてはいけないもの。</strong>Privateでも、成績・名簿・住所・顔写真など<strong>個人情報はリポジトリに置かない</strong>。GitHubは教材と手順書の箱、個人情報は校務支援システムの中——この線引きを最初に学年で合意してください。
         </div>
-      </div>
-
-      <div class="work-section">
-        <h3>ワーク — 自分の「最新版どれ?」を1つ持ち込む</h3>
-        <p>いま手元で版が散らかっているファイルを1つ選び、リポジトリを作って登録→1回差し替え→Historyで確認、まで回してください（10分）。終わったら隣の人とHistoryを見せ合い、コミットメッセージが「未来の自分に通じるか」を確かめます。</p>
       </div>
 
 {{PAGE_NAV}}
