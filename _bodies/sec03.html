@@ -4,7 +4,7 @@
       <h1 class="page-hero-title">§3　ハンズオン① 教材の「最新版どれ?」をなくす</h1>
       <p class="page-hero-description">
         学年フォルダの「プリント_最終_改2_本当に最終.docx」問題を、リポジトリ1つで終わらせます。
-        このワークは<strong>§2で作った hello-github の続き</strong>でそのまま行います。新しい準備は不要、教材はこのページからコピペするだけです（10分）。
+        このワークは<strong>§2で作った hello-github の続き</strong>でそのまま行います。新しい準備は不要、教材はこのページからコピペするだけです（13分）。
       </p>
     </div>
   </section>
@@ -12,7 +12,7 @@
   <section class="section">
     <div class="container container-content">
 
-      <p><strong>今日体験すること: </strong>プリントを1枚入れる → 配布後の訂正を2回する → 履歴と差分で「最新版が常に1つ」を確かめる。</p>
+      <p><strong>今日体験すること: </strong>プリントを1枚入れる → 配布後の訂正を2回する → 履歴と差分を見る → <strong>前の版に戻す</strong>。</p>
       <p><strong>使う機能: </strong>Create new file＋編集（鉛筆マーク）＋履歴（History）＋差分表示</p>
 
       <div class="section-header" id="s3-1">
@@ -23,6 +23,7 @@
         <li>hello-github の中に「夏休みの課題」プリントが<strong>1つだけ</strong>ある（_最終_改2 のようなコピーはない）</li>
         <li>Historyを見ると「初版 → 訂正① → 訂正②」が理由つきで並んでいる</li>
         <li>訂正のコミットを開くと、<strong>変わった行だけが赤と緑で</strong>表示される</li>
+        <li>訂正②を<strong>取り消して前の版に戻した記録</strong>まで、履歴に残っている</li>
       </ul>
 
       <div class="section-header" id="s3-2" style="margin-top: var(--space-16);">
@@ -84,13 +85,31 @@
         </div>
       </div>
 
+      <div class="section-header" id="s3-4b" style="margin-top: var(--space-16);">
+        <span class="section-label">3-5</span>
+        <h2 class="section-title">手順4　前の版に戻す（3分）</h2>
+      </div>
+      <p>ところが放課後、「読書感想文の回収はやっぱり別日程で」と連絡が来ました。訂正②を取り消して、<strong>訂正①の時点に戻します</strong>。</p>
+      <ol class="bullet-list numbered">
+        <li><strong>History</strong> を開き、戻りたい版＝<strong>訂正①のコミット</strong>（「提出日を9月2日に訂正…」）をクリック</li>
+        <li>ファイル名の右の <strong>「…」→ View file</strong> で、当時の全文を表示して<strong>すべてコピー</strong></li>
+        <li>元のファイルに戻って鉛筆マーク → 全文を選択して<strong>貼り替え</strong></li>
+        <li>Commit changes... → メッセージ: <strong>「読書感想文の追加を取り消し: 回収日程が別になったため」</strong></li>
+      </ol>
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">history</span>
+        <div>
+          <strong>「戻す」も上書きではなく、新しい履歴。</strong>Historyには「追加した記録」と「取り消した記録」が両方残ります。消えないから、安心して戻せる——紙のファイル綴じにはない安全装置です。
+        </div>
+      </div>
+
       <div class="work-section">
         <h3>ワーク — ペアでHistoryを見せ合う（5分）</h3>
         <p>隣の人とお互いのHistoryを開き、コミットメッセージが「未来の自分（来年この訂正の理由を忘れた自分）に通じるか」を確かめてください。早く終わったペアは、手元にある実物のプリントで同じ流れ（登録→1回訂正→History）をもう1周どうぞ。</p>
       </div>
 
       <div class="section-header" id="s3-5" style="margin-top: var(--space-16);">
-        <span class="section-label">3-5</span>
+        <span class="section-label">3-6</span>
         <h2 class="section-title">教室に持ち帰るときの型（あとで読めばOK）</h2>
       </div>
       <ul class="bullet-list">
