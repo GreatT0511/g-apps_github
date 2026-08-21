@@ -11,10 +11,11 @@ PAGES = [
     ("sec01",  "SECTION 01",  "fact_check",  "§1 はじめる前のチェック"),
     ("sec02",  "SECTION 02",  "school",      "§2 GitHubの基礎"),
     ("sec03",  "SECTION 03",  "history_edu", "§3 教材の「最新版どれ?」をなくす"),
-    ("sec04",  "SECTION 04",  "public",      "§4 教材ページを5分でWeb公開"),
+    ("sec04",  "SECTION 04",  "public",      "§4 教科サイトをWeb公開"),
     ("sec05",  "SECTION 05",  "auto_stories","§5 探究を1人1リポジトリで残す"),
     ("sec06",  "SECTION 06",  "rate_review", "§6 生徒同士のレビューをプルリクで回す"),
     ("sec07",  "SECTION 07",  "shield",      "§7 生徒に使わせる日のルールづくり"),
+    ("faq",    "Q&A",         "help",        "Q&A よくある質問"),
 ]
 
 def nav_html(active):

@@ -1,10 +1,10 @@
   <section class="page-hero">
     <div class="container">
       <span class="section-label">SECTION 04</span>
-      <h1 class="page-hero-title">§4　ハンズオン② 教材ページを5分でWebに公開する</h1>
+      <h1 class="page-hero-title">§4　ハンズオン② Geminiで作った教科サイトをWebに公開する</h1>
       <p class="page-hero-description">
-        GitHub Pages を使うと、リポジトリに置いたMarkdownがそのままWebページになります。
-        サーバー契約なし・無料・URLを配るだけ。授業のリンク集、単元のまとめページ、保護者向け案内に使えます。
+        サイトづくりはGeminiのCanvasに任せ、公開はGitHub Pagesで行います。
+        プロンプトを貼る → できたHTMLをリポジトリに置く → 公開設定。サーバー契約なし・無料・URLを配るだけです。
       </p>
     </div>
   </section>
@@ -12,8 +12,8 @@
   <section class="section">
     <div class="container container-content">
 
-      <p><strong>使いどころ: </strong>授業リンク集・単元まとめ・部活動や行事の案内ページ。</p>
-      <p><strong>使う機能: </strong>GitHub Pages（公開リポジトリなら無料）</p>
+      <p><strong>使いどころ: </strong>教科の学習ページ・授業リンク集・単元まとめ・部活動や行事の案内。</p>
+      <p><strong>使う道具: </strong>Gemini（Canvas）＋ GitHub Pages（公開リポジトリなら無料）</p>
 
       <div class="section-header" id="s4-1">
         <span class="section-label">4-1</span>
@@ -22,64 +22,94 @@
       <div class="notice-box">
         <span class="material-symbols-outlined notice-icon">public</span>
         <div>
-          <strong>Pagesは「全世界公開」です。</strong>無料でPagesを使えるのは<strong>Public（公開）リポジトリ</strong>——つまり、ページだけでなく<strong>リポジトリの中身と履歴もすべて世界から見えます</strong>。生徒の氏名・写真・校内事情は載せない。公開してよいものだけを入れる専用リポジトリを作るのが原則です。
+          <strong>Pagesは「全世界公開」です。</strong>無料でPagesを使えるのは<strong>Public（公開）リポジトリ</strong>——つまり、ページだけでなく<strong>リポジトリの中身と履歴もすべて世界から見えます</strong>。生徒の氏名・写真・校内事情は載せない。公開してよいものだけを入れる専用リポジトリを作るのが原則です（下のプロンプトにも「個人情報を入れない」条件が入っています）。
         </div>
       </div>
 
       <div class="section-header" id="s4-2" style="margin-top: var(--space-16);">
         <span class="section-label">4-2</span>
-        <h2 class="section-title">手順　リポジトリ作成から公開まで</h2>
+        <h2 class="section-title">手順1　GeminiのCanvasでサイトを作る（7分）</h2>
       </div>
       <ol class="bullet-list numbered">
-        <li>New repository → 名前は例えば <strong>rika-links</strong> → 今回は <strong>Public</strong> → README付きで作成</li>
-        <li>README.md を開き、下のテンプレを貼って自分の授業用に書き換え、コミット</li>
-        <li><strong>Settings → Pages</strong> を開く</li>
-        <li>Build and deployment の Source が <strong>Deploy from a branch</strong> になっていることを確認し、Branch を <strong>main</strong> にして <strong>Save</strong></li>
-        <li>1〜2分待ってページを再読み込みすると、上部に公開URLが表示されます: <strong>https://ユーザー名.github.io/リポジトリ名/</strong></li>
-        <li>このURLを生徒に配る（Classroomの投稿・QRコード等）</li>
+        <li><a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> を開き、入力欄の <strong>Canvas</strong> を選ぶ</li>
+        <li>下のプロンプトをコピーして貼り付け、<strong>◯◯の部分を自分の教科・学年・単元に書き換えて</strong>から送信</li>
+        <li>右側にサイトのプレビューが表示されます。直したいところは、そのまま日本語で追加指示（例:「見出しをもっと大きく」「配色を緑系に」）</li>
+        <li>仕上がったら<strong>コード表示に切り替えて、HTML全体をコピー</strong>します</li>
       </ol>
-
       <div class="prompt-box">
         <div class="prompt-box-header">
-          <span class="prompt-box-title">授業リンク集のテンプレ（README.mdに貼り付け）</span>
+          <span class="prompt-box-title">Geminiに貼るプロンプト（◯◯を書き換えて使う）</span>
           <span class="prompt-box-hint">クリックでコピー</span>
         </div>
-        <div class="prompt-content copyable"># 理科（中2）授業ページ
+        <div class="prompt-content copyable">あなたはWebデザイナーです。以下の条件で、教科の学習サイトを1ページ作ってください。
 
-## 今週の単元
-- 電流と電圧 — [NHK for School の実験動画](https://www.nhk.or.jp/school/)
-- ふりかえりフォーム — （フォームのURL）
+【目的】
+中学◯年生に配る「◯◯科の授業ページ」。生徒がスマートフォンで開いて、単元の要点と学習リンクを確認するためのサイトです。
 
-## いつでも使うもの
-- [教科書会社の資料ページ](https://example.com)
-- 質問箱 — （フォームのURL）
+【内容】
+- サイト名: ◯◯科 学習ページ
+- 単元セクションを3つ: 「◯◯」「◯◯」「◯◯」。各単元に、要点の箇条書き3行と、学習リンクの箇条書き2つ（リンク先はあとで差し替えるのでダミーでよい）
+- 「お知らせ」欄を1つ（テスト範囲などを書く場所。今は「ここにお知らせを書きます」でよい）
+- フッターに「このページは授業用です」と表記
 
-## 更新履歴
-このページの変更履歴は、リポジトリの History からいつでも確認できます。</div>
+【技術条件（必ず守る）】
+- HTMLファイル1つだけで完結させる。CSSは&lt;head&gt;の&lt;style&gt;タグに統合し、外部CSSファイル・外部JavaScript・CDN・画像ファイルは使わない
+- スマートフォンでも読みやすいレスポンシブデザイン
+- 配色は教科に合う色を1色だけアクセントに使い、全体は白基調で読みやすく
+- 文字は大きめの日本語。見出しの階層をはっきりさせる
+- 学校名・教員名・生徒名などの個人情報や、実在の固有名詞は入れない
+
+完成したら、コード全体を1つのHTMLとして出力してください。</div>
       </div>
 
       <div class="section-header" id="s4-3" style="margin-top: var(--space-16);">
         <span class="section-label">4-3</span>
-        <h2 class="section-title">運用のコツ</h2>
+        <h2 class="section-title">手順2　GitHubに置いて公開する（5分）</h2>
+      </div>
+      <ol class="bullet-list numbered">
+        <li>New repository → 名前は <strong>kyouka-site</strong>（自分の教科名でも可・半角英数）→ 今回は <strong>Public</strong> → README付きで作成</li>
+        <li><strong>Add file → Create new file</strong> → ファイル名: <strong>index.html</strong>（この名前だと公開URLの表紙になります）</li>
+        <li>Geminiからコピーした<strong>HTML全体を貼り付け</strong>てコミット → メッセージ: <strong>「教科サイトを登録: Gemini Canvasで作成した初版」</strong></li>
+        <li><strong>Settings → Pages</strong> → Source が <strong>Deploy from a branch</strong> であることを確認し、Branch を <strong>main</strong> にして <strong>Save</strong></li>
+        <li>1〜2分待ってページを再読み込みすると、公開URLが表示されます: <strong>https://ユーザー名.github.io/リポジトリ名/</strong></li>
+        <li>このURLを生徒に配る（Classroomの投稿・QRコード等）</li>
+      </ol>
+
+      <div class="section-header" id="s4-4" style="margin-top: var(--space-16);">
+        <span class="section-label">4-4</span>
+        <h2 class="section-title">1つのリポジトリで、サイトを複数持つ</h2>
+      </div>
+      <p>2つ目のサイトを作るたびにリポジトリを増やす必要はありません。ルールは§3-6のフォルダと同じです——<strong>フォルダを作って、その中に index.html を置くと、フォルダ名がそのままURLになります</strong>。</p>
+      <ul class="bullet-list">
+        <li><strong>作り方: </strong>Add file → Create new file → ファイル名を <strong>sugaku/index.html</strong> のように「フォルダ名/index.html」にして、Geminiで作った2つ目のHTMLを貼り付け</li>
+        <li><strong>URLの対応: </strong>リポジトリ直下の index.html が表紙 → <strong>https://ユーザー名.github.io/リポジトリ名/</strong>、sugaku/index.html → <strong>…/リポジトリ名/sugaku/</strong>、rika/index.html → <strong>…/リポジトリ名/rika/</strong>。フォルダの数だけサイトを増やせます</li>
+        <li><strong>フォルダ名は半角英数で: </strong>URLの一部になるので、日本語ではなく sugaku・rika・bunkasai のようにローマ字で</li>
+        <li><strong>表紙を目次にする: </strong>直下の index.html に各サイトへのリンクを並べれば、そこが「わたしの教材ポータル」になります。Geminiに「以下のリンクを並べた目次ページを同じデザインで」と頼めば表紙も1分です</li>
+        <li><strong>公開設定は最初の1回だけ: </strong>Pagesの設定はリポジトリ単位です。フォルダを増やしても、設定をやり直す必要はありません</li>
+      </ul>
+
+      <div class="section-header" id="s4-5" style="margin-top: var(--space-16);">
+        <span class="section-label">4-5</span>
+        <h2 class="section-title">更新の運用 — Geminiで直して、貼り替えるだけ</h2>
       </div>
       <ul class="bullet-list">
-        <li><strong>更新はREADMEを直すだけ。</strong>コミットすると1〜2分で公開ページに反映されます。URLは変わりません</li>
-        <li>ページを増やしたいときは、リポジトリに <strong>別の.mdファイル</strong>を作ればそれも自動でページになります（例: dai1shou.md → /dai1shou）</li>
-        <li>画像はリポジトリにアップして相対パスで貼れます——ただし<strong>人物が写っているものは載せない</strong></li>
-        <li>リンク集の変更もコミットメッセージに理由を書く癖を——「リンク差し替え: 動画が非公開になったため」。次の担当者への引き継ぎ書になります</li>
+        <li><strong>更新のたびに履歴が残ります。</strong>Geminiで直した新しいHTMLを index.html に貼り替えてコミットするだけ。URLは変わらず、1〜2分で反映。コミットメッセージには理由を——「テスト範囲を更新: 中間試験の範囲発表のため」</li>
+        <li>ダミーのリンクは、GitHub上で index.html を直接編集して差し替えてもOKです（リンク差し替え程度ならGeminiに戻らなくて済みます）</li>
+        <li>画像を使いたくなったら、リポジトリにアップして相対パスで貼れます——ただし<strong>人物が写っているものは載せない</strong></li>
       </ul>
 
       <div class="notice-box">
         <span class="material-symbols-outlined notice-icon">workspace_premium</span>
         <div>
-          <strong>発展①: プロフィールREADME。</strong>ユーザー名と同じ名前のリポジトリ（例: tanaka-sensei/tanaka-sensei）を作ると、そのREADMEが自分のプロフィールページに表示されます。教員としての実践ポートフォリオの表紙にどうぞ。<br>
-          <strong>発展②: 非公開のままWeb公開。</strong>Privateリポジトリを社内限定でPages公開するには有料プランが必要です。まずは「公開専用リポジトリを分ける」運用で十分です。
+          <strong>発展①: Markdownだけでも公開できます。</strong>README.md に書いた内容もそのままページになります。凝ったデザインが不要な連絡ページはMarkdownで十分です。<br>
+          <strong>発展②: プロフィールREADME。</strong>ユーザー名と同じ名前のリポジトリ（例: tanaka-sensei/tanaka-sensei）を作ると、そのREADMEが自分のプロフィールページに表示されます。<br>
+          <strong>発展③: 非公開のままWeb公開。</strong>Privateリポジトリのまま公開するには有料プランが必要です。まずは「公開専用リポジトリを分ける」運用で十分です。
         </div>
       </div>
 
       <div class="work-section">
-        <h3>ワーク — 自分の授業リンク集を公開する</h3>
-        <p>テンプレを使って、担当授業のリンク集を1ページ公開してください（10分）。公開できたら、URLを隣の人とスマホで開き合って確認。「これなら生徒に配れるか?」の目で相互チェックします。</p>
+        <h3>ワーク — 自分の教科サイトを公開する（12分）</h3>
+        <p>プロンプトの◯◯を自分の教科・単元に書き換えてGeminiに送り、できたHTMLを index.html として公開してください。公開できたら、URLを隣の人とスマホで開き合って確認。「これなら生徒に配れるか?」「個人情報が入っていないか?」の目で相互チェックします。早く終わった人は、4-4の方法で2つ目のサイト（フォルダ）に挑戦。</p>
       </div>
 
 {{PAGE_NAV}}

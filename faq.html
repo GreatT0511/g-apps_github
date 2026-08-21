@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231A73E8'/><text x='32' y='45' font-size='38' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>G</text></svg>">
+  <title>Q&A よくある質問 | GitHub活用 | G-Apps.jp アカデミー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDGothic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/style.css?v=20260819">
+</head>
+<body>
+  <div class="page-transition-overlay">
+    <span class="transition-text">G-Apps.jp アカデミー</span>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">G</span>
+        <span>G-Apps.jp アカデミー</span>
+      </a>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Overview</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-trigger">Workshop
+            <span class="material-symbols-outlined">expand_more</span>
+          </span>
+          <div class="nav-dropdown-menu">
+            <a href="sec00.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">person_add</span>§0 アカウント作成手順
+            </a>
+            <a href="sec01.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">fact_check</span>§1 はじめる前のチェック
+            </a>
+            <a href="sec02.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">school</span>§2 GitHubの基礎
+            </a>
+            <a href="sec03.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">history_edu</span>§3 教材の「最新版どれ?」をなくす
+            </a>
+            <a href="sec04.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">public</span>§4 教科サイトをWeb公開
+            </a>
+            <a href="sec05.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">auto_stories</span>§5 探究を1人1リポジトリで残す
+            </a>
+            <a href="sec06.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">rate_review</span>§6 生徒同士のレビューをプルリクで回す
+            </a>
+            <a href="sec07.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">shield</span>§7 生徒に使わせる日のルールづくり
+            </a>
+            <a href="faq.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">help</span>Q&A よくある質問
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="material-symbols-outlined icon-moon">dark_mode</span>
+          <span class="material-symbols-outlined icon-sun">light_mode</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="drawer" id="drawer">
+    <div class="drawer-header">
+      <span class="drawer-title">Menu</span>
+      <button class="drawer-close" id="drawerClose">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="drawer-content">
+      <a href="index.html" class="drawer-link">
+        <span class="material-symbols-outlined">home</span> Overview
+      </a>
+      <div class="drawer-divider"></div>
+      <span class="drawer-section-label">Workshop</span>
+      <a href="sec00.html" class="drawer-link">
+        <span class="material-symbols-outlined">person_add</span> §0 アカウント作成手順
+      </a>
+      <a href="sec01.html" class="drawer-link">
+        <span class="material-symbols-outlined">fact_check</span> §1 はじめる前のチェック
+      </a>
+      <a href="sec02.html" class="drawer-link">
+        <span class="material-symbols-outlined">school</span> §2 GitHubの基礎
+      </a>
+      <a href="sec03.html" class="drawer-link">
+        <span class="material-symbols-outlined">history_edu</span> §3 教材の「最新版どれ?」をなくす
+      </a>
+      <a href="sec04.html" class="drawer-link">
+        <span class="material-symbols-outlined">public</span> §4 教科サイトをWeb公開
+      </a>
+      <a href="sec05.html" class="drawer-link">
+        <span class="material-symbols-outlined">auto_stories</span> §5 探究を1人1リポジトリで残す
+      </a>
+      <a href="sec06.html" class="drawer-link">
+        <span class="material-symbols-outlined">rate_review</span> §6 生徒同士のレビューをプルリクで回す
+      </a>
+      <a href="sec07.html" class="drawer-link">
+        <span class="material-symbols-outlined">shield</span> §7 生徒に使わせる日のルールづくり
+      </a>
+      <a href="faq.html" class="drawer-link active">
+        <span class="material-symbols-outlined">help</span> Q&A よくある質問
+      </a>
+    </div>
+  </div>
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Q&amp;A</span>
+      <h1 class="page-hero-title">よくある質問 — 事前にどうぞ、当日もどうぞ</h1>
+      <p class="page-hero-description">
+        研修の前後に届く質問をまとめました。ここにない疑問は、当日その場で聞いてください。「初歩的すぎるかな」という質問ほど、会場の10人が同じことを思っています。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-content">
+
+      <div class="section-header" id="faq-account">
+        <span class="section-label">A</span>
+        <h2 class="section-title">アカウントとお金のこと</h2>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">本当に無料ですか? どこから有料ですか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>この講座の内容はすべて無料の範囲です。無料プランで非公開リポジトリは作り放題、共同編集者も無制限、Webページ公開(§4)も無料です。有料が関係するのは「非公開リポジトリのままWeb公開したい」場合など、ごく一部だけ。まず無料で始めて困ることはありません。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">学校のGoogleアカウントで作ってはだめですか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>だめではありません。学校で禁止されていなければ、学校のアカウントで作るのももちろん推奨です。ただし転勤などでアドレスが変わるときは、先にGitHub側のメールアドレスを変更する必要があります。<strong>本日の研修では、学校ごとのデータ利用規則の確認を挟まずに進めるため、個人のGoogleアカウントで作成してください</strong>(<a href="sec00.html">§0</a>・<a href="sec01.html">§1-1</a>)。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">ユーザー名はあとから変えられますか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>変えられます。ただしユーザー名はURLの一部なので、変えると配布済みのリンクが切れます。最初に「半角英数とハイフン・本名フルネームや学校名は入れない」で決め切るのがおすすめです(<a href="sec01.html">§1-1</a>)。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">パスワードを忘れたらどうなりますか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>Google連携で作った場合(§0のルート)は、GitHub独自のパスワードを覚える必要がそもそもありません。Googleにログインできれば入れます。メール+パスワード方式で作った場合は、ログイン画面の「Forgot password?」からメールで再設定できます。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">転勤・退職したらアカウントはどうなりますか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>何も起きません。アカウントもリポジトリも個人の資産として、そのまま持ち歩けます。これがこの道具の大きな価値です。学校メールで作っていた場合だけ、アドレスが失効する前に Settings → Emails で個人メールに変更してください。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">仕事用と個人用でアカウントを2つ作ってもいいですか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>規約上、無料の個人アカウントは1人1つが原則です。用途を分けたい場合は、アカウントを増やすのではなく、学校・教科用の「Organization(組織)」を無料で作って、個人アカウントで参加する形にします。運用が本格化してきたら検討しましょう。</p>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="section-header" id="faq-safety" style="margin-top: var(--space-16);">
+        <span class="section-label">B</span>
+        <h2 class="section-title">安全とルールのこと</h2>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Private(非公開)は、どこまで秘密ですか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>招待した共同編集者以外には、検索にも出ず、URLを知っていても見えません。ただし「見えないから置いていい」ではなく、<strong>成績・名簿・住所・顔写真などの個人情報はPrivateでも置かない</strong>のがこの講座のルールです(§3)。個人情報は校務支援システムの中、GitHubは教材と手順書の箱です。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">生徒の作品を置くのは、著作権的に問題ないですか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>生徒の作品の著作権は生徒本人にあります。置く前に本人(と保護者)の同意を取り、まずPrivateで始めるのが原則です。公開する場合は氏名の扱い・公開範囲を含めて<a href="sec07.html">§7の配布ひな形</a>で合意してから。「勝手に世界公開」が一番のトラブルの元です。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">生徒は何歳から使えますか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>GitHubの規約で<strong>13歳以上</strong>です。中学1年生は誕生日前の生徒がいる点に注意してください。小学校では生徒にアカウントを作らせず、先生の画面を映して見せる・先生のリポジトリに作品を預かる形で使います(§7)。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">学校の端末でGitHubが開けません(フィルタリング)<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>自治体のフィルタリングでブロックされている場合は、情報担当を通じて解除申請をします。申請時の説明は「開発者向けサイト」ではなく<strong>「版管理機能つきの教材共有・公開サービス。文書の履歴が残る共有フォルダとして使う」</strong>と用途で伝えるのがコツです。github.com と github.io (公開ページ)の2ドメインを申請してください。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">管理職や教育委員会には、どう説明すればいいですか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>3点セットで通ります。①用途:「教材・手順書の原本管理(履歴つき共有フォルダ)」 ②線引き:「個人情報は置かない。校務支援システムと役割分担」 ③根拠:「無料・国内外の教育機関で利用実績」。<a href="sec07.html">§7の配布ひな形</a>がそのまま説明文書になります。</p>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="section-header" id="faq-ops" style="margin-top: var(--space-16);">
+        <span class="section-label">C</span>
+        <h2 class="section-title">操作のこと</h2>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">ファイル名は日本語でもいいですか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>大丈夫です。今日のワークも「プリント_夏休みの課題.md」と日本語で進めます。例外は§4でWeb公開するページのファイル——URLの一部になるので、半角英数(index.htmlなど)にしておくと共有しやすくなります。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">WordやExcelのファイルのままでも使えますか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>使えます。ドラッグ&ドロップで置けて、同名で上げ直せば版も重なります。ただし「どの行が変わったか」の色付き比較はMarkdownだけの特典です。<strong>今あるWord資産はそのまま入れる、新しく作る配布文書はMarkdownで</strong>——この使い分けで十分です(§3)。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">スマホやタブレットからも使えますか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>ブラウザからすべての操作ができ、公式アプリもあります。閲覧・確認・小さな修正はスマホで十分ですが、今日のような編集ワークはキーボードのあるPC・Chromebookが楽です。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">間違ってファイルやリポジトリを消してしまったら?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>ファイルの削除はただのコミットなので、Historyからいつでも戻せます(§3の手順4と同じ要領)。リポジトリごと削除した場合も、<strong>90日以内</strong>なら Settings → Deleted repositories から復元できます。「取り返しがつかない操作」はほぼありません。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">コミットメッセージを書き間違えました<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>そのままで大丈夫です。ブラウザ操作では過去のメッセージは直せませんが、履歴の価値は完璧さではなく回数です。気になるなら次のコミットのメッセージで「(先ほどの訂正: ○○の誤りでした)」と補足すれば十分です。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">容量の制限はありますか? 動画は置けますか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>ブラウザからのアップロードは1ファイル25MBまで、リポジトリ全体は1GB以内が目安です。プリント・指導案・写真なら余裕ですが、<strong>授業動画などの大きなファイルは不向き</strong>です。動画はDriveやYouTube(限定公開)に置き、GitHubにはリンクを書くのが定石です。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Markdownを覚えるのが大変そうです<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>今日使うのは「# が見出し」「- が箇条書き」の2つだけです。それ以上は必要になったときに調べれば足ります。§2のテンプレとこのサイトの原稿をコピペして直すところから始めれば、書き方は自然に手に入ります。</p>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="section-header" id="faq-unyo" style="margin-top: var(--space-16);">
+        <span class="section-label">D</span>
+        <h2 class="section-title">運用と使い分けのこと</h2>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Google Driveと何が違うのですか? どちらを使えば?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>両方使います。Driveの強みは同時編集と気軽な共有、GitHubの強みは<strong>「版・理由・差分が残る原本」</strong>です。使い分けの目安: 作りかけの共同作業はDrive、確定版・配布物・積み上げたい記録はGitHub。「_最終_改2」が生まれがちな文書ほどGitHub向きです。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Google Classroomとは競合しませんか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>役割が違うので併用です。課題の配布・回収・締切管理はClassroomのまま。GitHubは「提出して終わり」にしたくない作品・探究・教材の<strong>積み上がる置き場</strong>です(§5)。Classroomのお知らせに、生徒のリポジトリや公開ページのリンクを貼る形でつながります。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">同僚が乗り気ではありません<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>説得より実物です。まず自分の教科の箱(§3)を1つ作って運用し、「最新版どれ?」と聞かれたときにリンク1本で返す——それが一番の営業になります。共同編集者への招待は、相手が便利さを見てからで遅くありません。</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">使うのをやめたくなったら、データはどうなりますか?<span class="material-symbols-outlined accordion-icon">expand_more</span></button>
+          <div class="accordion-content"><div class="accordion-body">
+            <p>いつでも全部持ち出せます。各リポジトリは Code → Download ZIP で丸ごとダウンロードでき、ファイルはただのWord・PDF・テキストのまま。特殊な形式への囲い込みがないので、「やめるコスト」がほぼゼロです。安心して始めてください。</p>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="notice-box" style="margin-top: var(--space-12);">
+        <span class="material-symbols-outlined notice-icon">forum</span>
+        <div class="notice-content">
+          <strong>ここにない質問は、遠慮なく当日に。</strong>研修の各セクションの合間に質問タイムを取ります。操作でつまずいたら、その場で手を挙げてください——つまずきの共有も、この研修の教材です。
+        </div>
+      </div>
+
+      <div class="page-nav">
+        <a href="sec07.html"><span class="material-symbols-outlined">arrow_back</span> §7 生徒に使わせる日のルールづくり</a>
+        <a href="index.html">Overviewへ戻る <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">G-Apps.jp アカデミー 2026 / スクールエージェント株式会社</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">
+    <span class="material-symbols-outlined">check_circle</span> Copied
+  </div>
+
+  <script src="js/main.js?v=20260819"></script>
+  <script src="js/copy.js?v=20260819"></script>
+</body>
+</html>
