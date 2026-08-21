@@ -219,12 +219,29 @@
         <p>隣の人とお互いのHistoryを開き、コミットメッセージが「未来の自分（来年この訂正の理由を忘れた自分）に通じるか」を確かめてください。早く終わったペアは、手元にある実物のプリントで同じ流れ（登録→1回訂正→History）をもう1周どうぞ。</p>
       </div>
 
-      <div class="section-header" id="s3-5" style="margin-top: var(--space-16);">
+      <div class="section-header" id="s3-6" style="margin-top: var(--space-16);">
         <span class="section-label">3-6</span>
+        <h2 class="section-title">階層（フォルダ）の作り方 — 単元ごとに整理する</h2>
+      </div>
+      <p>プリントが増えてきたら、フォルダで階層を作って整理します。GitHubには「新しいフォルダ」ボタンが<strong>ありません</strong>。ルールは1つだけ——<strong>フォルダは、ファイル名にスラッシュ（/）を書くと生まれます</strong>。</p>
+      <ul class="bullet-list">
+        <li><strong>新しいファイルをフォルダ入りで作る: </strong>Add file → Create new file で、ファイル名欄に <strong>01_正負の数/確認テスト.md</strong> のように「フォルダ名＋<strong>/</strong>＋ファイル名」を入力します。<strong>/ を打った瞬間</strong>に、入力欄がフォルダ表示に切り替わります</li>
+        <li><strong>深い階層も一気に作れる: </strong><strong>2学期/01_正負の数/確認テスト.md</strong> と書けば、2階層がその場でできます</li>
+        <li><strong>今あるファイルをフォルダに移す: </strong>ファイルを開いて鉛筆マーク → 上部のファイル名欄の<strong>先頭にフォルダ名/を書き足して</strong>コミット。逆に、ファイル名欄の先頭で<strong>Backspace</strong>を押すと1つ上の階層に出ます</li>
+        <li><strong>並び順を揃える: </strong>フォルダ名は <strong>01_・02_</strong> の連番で始めると、画面の並びが単元の順になります</li>
+        <li><strong>空のフォルダは消える: </strong>中のファイルが0個になったフォルダは自動的に消えます（フォルダだけ残す、はできません）</li>
+      </ul>
+      <div class="work-section">
+        <h3>やってみる（1分）— さっきのプリントをフォルダに入れる</h3>
+        <p>プリント_夏休みの課題.md を開いて鉛筆マーク → ファイル名欄の先頭に <strong>01_夏休み/</strong> を書き足す → メッセージ <strong>「夏休みフォルダに移動: 単元ごとに整理するため」</strong> でコミット。ファイル一覧に戻ると、フォルダができています。</p>
+      </div>
+
+      <div class="section-header" id="s3-7" style="margin-top: var(--space-16);">
+        <span class="section-label">3-7</span>
         <h2 class="section-title">教室に持ち帰るときの型（あとで読めばOK）</h2>
       </div>
       <ul class="bullet-list">
-        <li><strong>箱の作り方: </strong>教科・分掌ごとに <strong>教科-学年</strong>（例: sugaku-2nen）の名前で <strong>Private</strong> リポジトリを1つ。フォルダは Add file → Create new file でファイル名の前に「01_正負の数/」のように<strong>フォルダ名＋スラッシュ</strong></li>
+        <li><strong>箱の作り方: </strong>教科・分掌ごとに <strong>教科-学年</strong>（例: sugaku-2nen）の名前で <strong>Private</strong> リポジトリを1つ。中の階層は3-6の方法で「01_正負の数/」「02_文字式/」と単元ごとに切る</li>
         <li><strong>Word・PDFも入る: </strong>Add file → Upload files にドラッグ&ドロップ。同じファイル名で上げ直せば自動で「新しい版」になります。ただし行単位の色付き差分はMarkdownだけの特典——<strong>新しく作る配布文書はMarkdownで</strong></li>
         <li><strong>同僚を入れる: </strong>Settings → Collaborators → Add people で招待し、§2の「コミットメッセージの型」を一緒に配る——ここを揃えるのが運用のコツです</li>
       </ul>
