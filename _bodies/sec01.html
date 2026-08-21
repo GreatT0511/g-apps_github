@@ -70,12 +70,32 @@
       </div>
       <div class="content-block">
         <h3>① 二段階認証（2FA）を有効にする</h3>
+        <p><strong>二段階認証とは</strong>：ログインを「パスワード（知っているもの）」と「スマートフォン（持っているもの）」の<strong>2つの鍵</strong>で守る仕組みです。メリットは明快で——</p>
+        <ul class="bullet-list">
+          <li><strong>パスワードが漏れても、乗っ取られません。</strong>他のサービスの流出パスワードを使い回した攻撃（これが乗っ取りの大半です）は、2つ目の鍵の前で止まります</li>
+          <li><strong>被害が自分だけで済まないから。</strong>先生のアカウントは教材の原本と生徒との共同作業の入口。乗っ取られると教材の改ざん・生徒のリポジトリへの侵入まで届いてしまいます。だから「作ったその日」に設定します</li>
+          <li><strong>学校への説明材料になります。</strong>「教員アカウントは全員二段階認証」——管理職・教育委員会にGitHub利用を説明するとき（Q&amp;A参照）、この一言があるだけで話が通りやすくなります</li>
+        </ul>
+        <p><strong>設定手順（3分）</strong>：</p>
         <ol class="bullet-list numbered">
-          <li>右上のアイコン → <strong>Settings</strong> → 左メニュー <strong>Password and authentication</strong></li>
-          <li><strong>Two-factor authentication</strong> の Enable を押す</li>
-          <li>認証アプリ（Google Authenticator等）でQRコードを読み、6桁コードを入力。<strong>パスキー（指紋・顔認証）の登録も可</strong>で、こちらの方が生徒には教えやすいです</li>
-          <li>表示される<strong>リカバリーコードを必ず保存</strong>する（印刷して職員室の鍵付き引き出しでも可）</li>
+          <li>右上の自分のアイコン → <strong>Settings</strong> → 左メニュー <strong>Password and authentication</strong></li>
+          <li><strong>Two-factor authentication</strong> の <strong>Enable</strong> を押す</li>
+          <li>2つ目の鍵の方式を選びます。おすすめ順に——
+            <ul class="bullet-list">
+              <li><strong>パスキー（指紋・顔認証）</strong>：スマートフォンのロック解除がそのまま鍵になります。コード入力が不要で、<strong>生徒に教えるときも一番つまずきが少ない</strong>方式です</li>
+              <li><strong>認証アプリ（Google Authenticator など）</strong>：アプリでQRコードを読み取り、表示される6桁コードを入力。どの端末でも使える定番です</li>
+              <li>SMS（ショートメール）方式は選べる場合もありますが、上の2つより安全性が下がるため、使えるなら<strong>パスキーか認証アプリ</strong>を選びましょう</li>
+            </ul>
+          </li>
+          <li>表示される<strong>リカバリーコードを必ず保存</strong>する（印刷して職員室の鍵付き引き出しでも可）。<strong>スマートフォンの紛失・機種変更のときの唯一の再入口</strong>です——認証アプリは機種変更で引き継ぎ忘れが起きがちなので、このコードが保険になります</li>
+          <li>Settingsの表示が緑の <strong>Enabled</strong> になれば完了です</li>
         </ol>
+        <div class="notice-box">
+          <span class="material-symbols-outlined notice-icon">link</span>
+          <div>
+            <strong>§0のGoogle連携で作った人へ。</strong>ログインがGoogleアカウント経由になるため、<strong>Googleアカウント側の2段階認証プロセスも必ずON</strong>にしてください（<a href="https://myaccount.google.com/security" target="_blank" rel="noopener">myaccount.google.com/security</a>から。学校のGoogleアカウントは組織側で強制されていることが多いですが、個人アカウントは自分で設定します）。そのうえでGitHub側の2FAも上の手順で有効化しておくと、二重に守られます。
+          </div>
+        </div>
         <h3 style="margin-top: var(--space-8);">② メールアドレスを非公開にする</h3>
         <ol class="bullet-list numbered">
           <li>Settings → 左メニュー <strong>Emails</strong></li>
