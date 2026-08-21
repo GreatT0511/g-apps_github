@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231A73E8'/><text x='32' y='45' font-size='38' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>G</text></svg>">
+  <title>図解 画面の見方 | GitHub活用 | G-Apps.jp アカデミー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDGothic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/style.css?v=20260819">
+</head>
+<body>
+  <div class="page-transition-overlay">
+    <span class="transition-text">G-Apps.jp アカデミー</span>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">G</span>
+        <span>G-Apps.jp アカデミー</span>
+      </a>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Overview</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-trigger">Workshop
+            <span class="material-symbols-outlined">expand_more</span>
+          </span>
+          <div class="nav-dropdown-menu">
+            <a href="sec00.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">person_add</span>§0 アカウント作成手順
+            </a>
+            <a href="sec01.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">fact_check</span>§1 はじめる前のチェック
+            </a>
+            <a href="sec02.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">school</span>§2 GitHubの基礎
+            </a>
+            <a href="sec03.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">history_edu</span>§3 教材の「最新版どれ?」をなくす
+            </a>
+            <a href="sec04.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">public</span>§4 教科サイトをWeb公開
+            </a>
+            <a href="sec05.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">auto_stories</span>§5 探究を1人1リポジトリで残す
+            </a>
+            <a href="sec06.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">rate_review</span>§6 生徒同士のレビューをプルリクで回す
+            </a>
+            <a href="sec07.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">shield</span>§7 生徒に使わせる日のルールづくり
+            </a>
+            <a href="screens.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">monitor</span>図解 画面の見方
+            </a>
+            <a href="faq.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">help</span>Q&A よくある質問
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="material-symbols-outlined icon-moon">dark_mode</span>
+          <span class="material-symbols-outlined icon-sun">light_mode</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="drawer" id="drawer">
+    <div class="drawer-header">
+      <span class="drawer-title">Menu</span>
+      <button class="drawer-close" id="drawerClose">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="drawer-content">
+      <a href="index.html" class="drawer-link">
+        <span class="material-symbols-outlined">home</span> Overview
+      </a>
+      <div class="drawer-divider"></div>
+      <span class="drawer-section-label">Workshop</span>
+      <a href="sec00.html" class="drawer-link">
+        <span class="material-symbols-outlined">person_add</span> §0 アカウント作成手順
+      </a>
+      <a href="sec01.html" class="drawer-link">
+        <span class="material-symbols-outlined">fact_check</span> §1 はじめる前のチェック
+      </a>
+      <a href="sec02.html" class="drawer-link">
+        <span class="material-symbols-outlined">school</span> §2 GitHubの基礎
+      </a>
+      <a href="sec03.html" class="drawer-link">
+        <span class="material-symbols-outlined">history_edu</span> §3 教材の「最新版どれ?」をなくす
+      </a>
+      <a href="sec04.html" class="drawer-link">
+        <span class="material-symbols-outlined">public</span> §4 教科サイトをWeb公開
+      </a>
+      <a href="sec05.html" class="drawer-link">
+        <span class="material-symbols-outlined">auto_stories</span> §5 探究を1人1リポジトリで残す
+      </a>
+      <a href="sec06.html" class="drawer-link">
+        <span class="material-symbols-outlined">rate_review</span> §6 生徒同士のレビューをプルリクで回す
+      </a>
+      <a href="sec07.html" class="drawer-link">
+        <span class="material-symbols-outlined">shield</span> §7 生徒に使わせる日のルールづくり
+      </a>
+      <a href="screens.html" class="drawer-link active">
+        <span class="material-symbols-outlined">monitor</span> 図解 画面の見方
+      </a>
+      <a href="faq.html" class="drawer-link">
+        <span class="material-symbols-outlined">help</span> Q&A よくある質問
+      </a>
+    </div>
+  </div>
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">REFERENCE</span>
+      <h1 class="page-hero-title">図解 画面の見方 — 3つの画面が分かれば迷わない</h1>
+      <p class="page-hero-description">
+        GitHubで今日使う画面は実質3つ：ホーム（ダッシュボード）・リポジトリの中・設定（Settings）。
+        それぞれの画面のどこが何をする場所か、番号つきの実画面で確認できます。迷子になったら、このページに戻ってきてください。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-content">
+
+      <div class="section-header" id="scr-1">
+        <span class="section-label">画面1</span>
+        <h2 class="section-title">ホーム（ダッシュボード） — ログイン直後の画面</h2>
+      </div>
+      <figure class="screenshot">
+        <img src="img/screens/01_dashboard.png" alt="GitHubダッシュボードの各部に番号を振った解説図">
+        <figcaption>画面1：ログイン直後のホーム。左が自分のリポジトリ、右が作業エリア</figcaption>
+      </figure>
+      <ol class="bullet-list numbered">
+        <li><strong>GitHubロゴ／Dashboard</strong> — どの画面にいても、ここを押せばこのホームに戻れます。迷ったらまずここ</li>
+        <li><strong>検索バー</strong> — 自分のリポジトリやファイルを横断検索。キーボードの「/」キーでも開きます</li>
+        <li><strong>「＋」ボタン</strong> — 新しく作るときの入口。<strong>New repository（新しいリポジトリ）はここ</strong>です</li>
+        <li><strong>通知（ベル）</strong> — 共同編集者への招待や、プルリクエスト（§6）の連絡がここに届きます。青い点＝未読</li>
+        <li><strong>自分のアイコン</strong> — アカウント全体のメニュー。Settings（アカウント設定・§1の二段階認証はここから）やサインアウト</li>
+        <li><strong>Top repositories＋New</strong> — よく使うリポジトリへの近道。緑の<strong>New</strong>からも新しいリポジトリを作れます</li>
+        <li><strong>Copilotの質問欄</strong> — GitHubのAIアシスタント。<strong>今日の研修では使いません</strong>。入力せずスクロールして通過してOK</li>
+        <li><strong>Feed</strong> — 自分のリポジトリやフォローした人の動きが流れる掲示板。見るだけの場所で、操作は不要です</li>
+      </ol>
+
+      <div class="section-header" id="scr-2" style="margin-top: var(--space-16);">
+        <span class="section-label">画面2</span>
+        <h2 class="section-title">リポジトリの中 — いちばん長くいる画面</h2>
+      </div>
+      <figure class="screenshot">
+        <img src="img/screens/02_repotop.png" alt="リポジトリトップ画面の各部に番号を振った解説図">
+        <figcaption>画面2：リポジトリを開いた画面。ファイル一覧と履歴の入口が並ぶ</figcaption>
+      </figure>
+      <ol class="bullet-list numbered">
+        <li><strong>リポジトリ名＋公開状態</strong> — いまどの箱にいるか。<strong>Private＝非公開／Public＝全世界公開</strong>。作業前にここを一瞥する癖を</li>
+        <li><strong>タブ列</strong> — 機能の切り替え。今日使うのは <strong>Code</strong>（ファイル一覧）と <strong>Settings</strong>（設定）、§6で <strong>Pull requests</strong>。他のタブは触らなくて大丈夫です</li>
+        <li><strong>ブランチ（main）</strong> — 版の「本流」の名前。この研修では<strong>常にmainのまま</strong>。変更しません</li>
+        <li><strong>緑のCodeボタン／Add file</strong> — <strong>Add file</strong>がファイルの追加（Create new file／Upload files）、緑の<strong>Code</strong>の中に<strong>Download ZIP</strong>（丸ごと持ち出し）があります</li>
+        <li><strong>ファイル一覧</strong> — 行の左がファイル名・フォルダ名、<strong>真ん中がそのファイルを最後に変えたときのコミットメッセージ</strong>、右がその日時。一覧そのものが「変更理由の一覧」になっています</li>
+        <li><strong>コミット数（19 Commits）</strong> — <strong>履歴（History）の入口</strong>。押すとこのリポジトリの全履歴が時系列で見られます（§3で使った画面）</li>
+        <li><strong>About</strong> — リポジトリの説明欄。§4でPages公開すると、<strong>公開URLがここに表示されます</strong></li>
+        <li><strong>README</strong> — リポジトリの「表紙」。開いた人が最初に読む説明書で、ファイル一覧の下に自動表示されます（§2で書いたもの）</li>
+        <li><strong>Deployments／github-pages</strong> — Pages公開の状態。緑のチェック＝公開が動いている印です（§4）</li>
+      </ol>
+
+      <div class="section-header" id="scr-3" style="margin-top: var(--space-16);">
+        <span class="section-label">画面3</span>
+        <h2 class="section-title">Settings（設定） — 触るのは4か所だけ</h2>
+      </div>
+      <figure class="screenshot">
+        <img src="img/screens/03_settings.png" alt="リポジトリのSettings画面の各部に番号を振った解説図">
+        <figcaption>画面3：リポジトリのSettings。左が設定の目次、右が設定内容</figcaption>
+      </figure>
+      <ol class="bullet-list numbered">
+        <li><strong>General</strong> — 基本設定。開いた直後はこのページが表示されています</li>
+        <li><strong>Collaborators</strong> — <strong>共同編集者の招待</strong>（§3）。同僚を入れるのはここ。Add people → 相手のユーザー名で招待</li>
+        <li><strong>Repository name＋Rename</strong> — リポジトリ名の変更。<strong>URLも変わるので、共有後の変更は慎重に</strong></li>
+        <li><strong>Pages</strong> — <strong>Webページ公開のスイッチ</strong>（§4）。Branchをmainにして Save するだけ</li>
+        <li><strong>Default branch</strong> — 本流ブランチの設定。<strong>mainのまま変えません</strong></li>
+        <li><strong>Features</strong> — Wiki・Issuesなど付属機能のON/OFF。<strong>初期設定のままでOK</strong>です</li>
+      </ol>
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">warning</span>
+        <div>
+          <strong>Settingsのいちばん下には「Danger Zone」があります。</strong>リポジトリの削除・公開範囲の変更など、取り返しに手間がかかる操作のコーナーです。赤い枠が見えたら、それ以上スクロールしない——今日はこれで十分です（万一削除しても90日以内なら復元できます。<a href="faq.html">Q&amp;A</a>参照）。
+        </div>
+      </div>
+
+      <div class="notice-box" style="margin-top: var(--space-8);">
+        <span class="material-symbols-outlined notice-icon">explore</span>
+        <div>
+          <strong>迷子になったときの合言葉：「ロゴ → 箱 → Code」。</strong>①左上のロゴでホームへ → ②左のTop repositoriesから自分の箱へ → ③Codeタブでファイル一覧へ。この3手でどこからでも作業場所に戻れます。
+        </div>
+      </div>
+
+      <div class="page-nav">
+        <a href="sec07.html"><span class="material-symbols-outlined">arrow_back</span> §7 生徒に使わせる日のルールづくり</a>
+        <a href="faq.html">Q&A よくある質問 <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">G-Apps.jp アカデミー 2026 / スクールエージェント株式会社</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">
+    <span class="material-symbols-outlined">check_circle</span> Copied
+  </div>
+
+  <script src="js/main.js?v=20260819"></script>
+  <script src="js/copy.js?v=20260819"></script>
+</body>
+</html>

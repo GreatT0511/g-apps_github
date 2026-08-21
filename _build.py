@@ -15,6 +15,7 @@ PAGES = [
     ("sec05",  "SECTION 05",  "auto_stories","§5 探究を1人1リポジトリで残す"),
     ("sec06",  "SECTION 06",  "rate_review", "§6 生徒同士のレビューをプルリクで回す"),
     ("sec07",  "SECTION 07",  "shield",      "§7 生徒に使わせる日のルールづくり"),
+    ("screens", "REFERENCE",  "monitor",     "図解 画面の見方"),
     ("faq",    "Q&A",         "help",        "Q&A よくある質問"),
 ]
 
