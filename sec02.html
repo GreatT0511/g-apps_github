@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231A73E8'/><text x='32' y='45' font-size='38' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>G</text></svg>">
+  <title>§2 GitHubの基礎 | GitHub活用 | G-Apps.jp アカデミー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDGothic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/style.css?v=20260819">
+</head>
+<body>
+  <div class="page-transition-overlay">
+    <span class="transition-text">G-Apps.jp アカデミー</span>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">G</span>
+        <span>G-Apps.jp アカデミー</span>
+      </a>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Overview</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-trigger">Workshop
+            <span class="material-symbols-outlined">expand_more</span>
+          </span>
+          <div class="nav-dropdown-menu">
+            <a href="sec01.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">fact_check</span>§1 はじめる前のチェック
+            </a>
+            <a href="sec02.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">school</span>§2 GitHubの基礎
+            </a>
+            <a href="sec03.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">history_edu</span>§3 教材の「最新版どれ?」をなくす
+            </a>
+            <a href="sec04.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">public</span>§4 教材ページを5分でWeb公開
+            </a>
+            <a href="sec05.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">auto_stories</span>§5 探究を1人1リポジトリで残す
+            </a>
+            <a href="sec06.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">rate_review</span>§6 生徒同士のレビューをプルリクで回す
+            </a>
+            <a href="sec07.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">shield</span>§7 生徒に使わせる日のルールづくり
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="material-symbols-outlined icon-moon">dark_mode</span>
+          <span class="material-symbols-outlined icon-sun">light_mode</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="drawer" id="drawer">
+    <div class="drawer-header">
+      <span class="drawer-title">Menu</span>
+      <button class="drawer-close" id="drawerClose">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="drawer-content">
+      <a href="index.html" class="drawer-link">
+        <span class="material-symbols-outlined">home</span> Overview
+      </a>
+      <div class="drawer-divider"></div>
+      <span class="drawer-section-label">Workshop</span>
+      <a href="sec01.html" class="drawer-link">
+        <span class="material-symbols-outlined">fact_check</span> §1 はじめる前のチェック
+      </a>
+      <a href="sec02.html" class="drawer-link active">
+        <span class="material-symbols-outlined">school</span> §2 GitHubの基礎
+      </a>
+      <a href="sec03.html" class="drawer-link">
+        <span class="material-symbols-outlined">history_edu</span> §3 教材の「最新版どれ?」をなくす
+      </a>
+      <a href="sec04.html" class="drawer-link">
+        <span class="material-symbols-outlined">public</span> §4 教材ページを5分でWeb公開
+      </a>
+      <a href="sec05.html" class="drawer-link">
+        <span class="material-symbols-outlined">auto_stories</span> §5 探究を1人1リポジトリで残す
+      </a>
+      <a href="sec06.html" class="drawer-link">
+        <span class="material-symbols-outlined">rate_review</span> §6 生徒同士のレビューをプルリクで回す
+      </a>
+      <a href="sec07.html" class="drawer-link">
+        <span class="material-symbols-outlined">shield</span> §7 生徒に使わせる日のルールづくり
+      </a>
+    </div>
+  </div>
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">SECTION 02</span>
+      <h1 class="page-hero-title">§2　GitHubの基礎 — 4つの言葉と、最初のリポジトリ</h1>
+      <p class="page-hero-description">
+        覚える言葉は4つだけ。そしてこの講座では<strong>プログラミングもコマンドも使いません</strong>——
+        すべてブラウザの画面操作だけで完結します。10分で最初のリポジトリを作り、最初の履歴を残します。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-content">
+
+      <div class="section-header" id="s2-1">
+        <span class="section-label">2-1</span>
+        <h2 class="section-title">4つの言葉を、学校の言葉に訳す</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><span class="material-symbols-outlined">folder</span></div>
+          <h3 class="feature-title">リポジトリ</h3>
+          <p class="feature-description"><strong>=書類箱。</strong>1つのテーマ（教科・学年・探究1人分）につき1箱。中にフォルダとファイルを入れます。公開（Public）か非公開（Private）かを箱ごとに選べます。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><span class="material-symbols-outlined">save</span></div>
+          <h3 class="feature-title">コミット</h3>
+          <p class="feature-description"><strong>=理由つきのセーブ。</strong>変更を保存するとき、必ず「なぜ変えたか」を一言書きます。この一言の積み重ねが、あとで宝になります。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><span class="material-symbols-outlined">sticky_note_2</span></div>
+          <h3 class="feature-title">イシュー（Issue）</h3>
+          <p class="feature-description"><strong>=箱に貼る付箋。</strong>「ここ直したい」「これどうする?」という相談カード。解決したら閉じます。閉じた付箋も全部残ります。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><span class="material-symbols-outlined">call_merge</span></div>
+          <h3 class="feature-title">プルリクエスト</h3>
+          <p class="feature-description"><strong>=「こう直したら?」の提案書。</strong>相手のファイルを直接書き換えず、変更案として送り、相手が採用・却下を決めます。§6の主役です。</p>
+        </div>
+      </div>
+
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">history_edu</span>
+        <div>
+          <strong>コミットは「選択の記録」。</strong>SLOW AIで生徒に書かせている署名ログ——誰が・何を・なぜ採用/修正/棄却したか——を、GitHubは仕組みとして最初から持っています。<strong>コミットメッセージ=署名</strong>。ここがこの道具を学校で使う一番の理由です。
+        </div>
+      </div>
+
+      <div class="section-header" id="s2-2" style="margin-top: var(--space-16);">
+        <span class="section-label">2-2</span>
+        <h2 class="section-title">最初のリポジトリを作る</h2>
+      </div>
+      <ol class="bullet-list numbered">
+        <li>右上の <strong>＋</strong> → <strong>New repository</strong></li>
+        <li>Repository name に <strong>hello-github</strong>（練習用なので何でも可）</li>
+        <li><strong>Private</strong>（非公開）を選ぶ——迷ったら常にPrivateから</li>
+        <li><strong>Add a README file</strong> にチェックを入れて <strong>Create repository</strong></li>
+      </ol>
+
+      <div class="section-header" id="s2-3" style="margin-top: var(--space-16);">
+        <span class="section-label">2-3</span>
+        <h2 class="section-title">最初のコミットを残す</h2>
+      </div>
+      <ol class="bullet-list numbered">
+        <li>README.md の右上の<strong>鉛筆マーク</strong>を押して編集画面へ</li>
+        <li>下のテンプレを貼り付けて、自分用に書き換える</li>
+        <li>右上の <strong>Commit changes...</strong> を押す</li>
+        <li>コミットメッセージ欄に「READMEに自己紹介を追加」のように<strong>何を・なぜ</strong>を書いて確定</li>
+        <li>ファイル一覧上部の <strong>History</strong>（時計マーク）を開き、いま残した履歴を確認する</li>
+      </ol>
+      <div class="prompt-box">
+        <div class="prompt-box-header">
+          <span class="prompt-box-title">READMEのテンプレ（貼り付けて書き換え）</span>
+          <span class="prompt-box-hint">クリックでコピー</span>
+        </div>
+        <div class="prompt-content copyable"># このリポジトリについて
+
+- 何の箱か: GitHub練習用
+- 管理者: （ユーザー名）
+- はじめた日: 2026-08-19
+
+## メモ
+Markdownは「# が見出し」「- が箇条書き」だけ覚えれば始められます。</div>
+      </div>
+
+      <div class="section-header" id="s2-4" style="margin-top: var(--space-16);">
+        <span class="section-label">2-4</span>
+        <h2 class="section-title">コミットメッセージの型（これだけ配れば回る）</h2>
+      </div>
+      <div class="prompt-box">
+        <div class="prompt-box-header">
+          <span class="prompt-box-title">コミットメッセージの型</span>
+          <span class="prompt-box-hint">クリックでコピー</span>
+        </div>
+        <div class="prompt-content copyable">（何をした）: （なぜそうした）
+
+例:
+第3問を差し替え: 試験範囲の変更に合わせるため
+AI案を修正して採用: 用語が教科書と違ったため言い換えた
+グラフを削除: 出典が確認できなかったため</div>
+      </div>
+
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">code</span>
+        <div>
+          <strong>発展:</strong> リポジトリを開いた状態でキーボードの <strong>.</strong>（ピリオド）を押すと、ブラウザ内に本格エディタ（github.dev）が開きます。複数ファイルをまとめて編集したくなったら思い出してください。今日は使いません。
+        </div>
+      </div>
+
+      <div class="work-section">
+        <h3>ここまでのチェック</h3>
+        <ul class="bullet-list">
+          <li>hello-github リポジトリがある</li>
+          <li>コミットが2つ以上あり、Historyで「何を: なぜ」が読める</li>
+          <li>4つの言葉を隣の人に自分の言葉で説明できる（リポジトリ=箱、コミット=理由つきセーブ、Issue=付箋、プルリク=提案書）</li>
+        </ul>
+      </div>
+
+      <div class="page-nav">
+        <a href="sec01.html"><span class="material-symbols-outlined">arrow_back</span> §1 はじめる前のチェック</a>
+        <a href="sec03.html">§3 教材の「最新版どれ?」をなくす <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">G-Apps.jp アカデミー 2026 / スクールエージェント株式会社</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">
+    <span class="material-symbols-outlined">check_circle</span> Copied
+  </div>
+
+  <script src="js/main.js?v=20260819"></script>
+  <script src="js/copy.js?v=20260819"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">SECTION 03</span>
+      <h1 class="page-hero-title">§3　ハンズオン① 教材の「最新版どれ?」をなくす</h1>
+      <p class="page-hero-description">
+        学年フォルダの「プリント_最終_改2_本当に最終.docx」問題を、リポジトリ1つで終わらせます。
+        置き場所は1つ、歴代の版は履歴に、変更の理由はコミットメッセージに。教科・分掌単位でそのまま使える型です。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-content">
+
+      <p><strong>校務での使いどころ: </strong>学年・教科で共有するプリント、指導案、行事マニュアルの原本管理。</p>
+      <p><strong>使う機能: </strong>リポジトリ＋アップロード＋履歴（History）＋共同編集者（Collaborators）</p>
+
+      <div class="section-header" id="s3-1">
+        <span class="section-label">3-1</span>
+        <h2 class="section-title">完成イメージ</h2>
+      </div>
+      <ul class="bullet-list">
+        <li>リポジトリ <strong>sugaku-2nen</strong>（数学・中2教材）が非公開である</li>
+        <li>フォルダが単元ごとに分かれている（01_正負の数、02_文字式、…）</li>
+        <li>どのプリントも、Historyを見れば「いつ・誰が・なぜ変えたか」がわかる</li>
+        <li>教科の同僚2人が共同編集者として入っている</li>
+      </ul>
+
+      <div class="section-header" id="s3-2" style="margin-top: var(--space-16);">
+        <span class="section-label">3-2</span>
+        <h2 class="section-title">手順1　箱を作ってファイルを入れる</h2>
+      </div>
+      <ol class="bullet-list numbered">
+        <li>New repository → 名前は <strong>教科-学年</strong> の形（例: sugaku-2nen）→ <strong>Private</strong> → README付きで作成</li>
+        <li><strong>Add file → Upload files</strong> を開き、手元のプリント（Word・PDF・画像）を<strong>ドラッグ&ドロップ</strong></li>
+        <li>コミットメッセージに「2学期分の既存プリントを一括登録」と書いて確定</li>
+        <li>フォルダを作りたいときは、Add file → Create new file でファイル名の前に「01_正負の数/」のように<strong>フォルダ名＋スラッシュ</strong>を付けます</li>
+      </ol>
+
+      <div class="section-header" id="s3-3" style="margin-top: var(--space-16);">
+        <span class="section-label">3-3</span>
+        <h2 class="section-title">手順2　差し替えて、履歴を見る</h2>
+      </div>
+      <ol class="bullet-list numbered">
+        <li>差し替えたいファイルのあるフォルダで Upload files → 同じファイル名で上げ直す（自動で「新しい版」になります）</li>
+        <li>コミットメッセージ: <strong>「第3問を差し替え: 試験範囲の変更に合わせるため」</strong></li>
+        <li>ファイル一覧上部の <strong>History</strong> を開く——歴代の版と理由が一覧になり、どの版にも戻せます</li>
+      </ol>
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">description</span>
+        <div>
+          <strong>WordとMarkdownの使い分け。</strong>Word・PDFも履歴管理はできますが、「どこが変わったか」の行単位比較はできません。<strong>これから新しく作る配布文書・手順書はMarkdown（.md）で書く</strong>と、変更箇所が色付きで見えるようになります。§2のテンプレの記法だけで十分です。
+        </div>
+      </div>
+
+      <div class="section-header" id="s3-4" style="margin-top: var(--space-16);">
+        <span class="section-label">3-4</span>
+        <h2 class="section-title">手順3　同僚を招待する</h2>
+      </div>
+      <ol class="bullet-list numbered">
+        <li>リポジトリの <strong>Settings → Collaborators → Add people</strong></li>
+        <li>同僚のユーザー名を入力して招待（相手にメールが届き、承認すると編集できるようになります）</li>
+        <li>招待した人にも§2の「コミットメッセージの型」を共有しておく——ここを揃えるのが運用のコツです</li>
+      </ol>
+
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">gpp_maybe</span>
+        <div>
+          <strong>置いてはいけないもの。</strong>Privateでも、成績・名簿・住所・顔写真など<strong>個人情報はリポジトリに置かない</strong>。GitHubは教材と手順書の箱、個人情報は校務支援システムの中——この線引きを最初に学年で合意してください。
+        </div>
+      </div>
+
+      <div class="work-section">
+        <h3>ワーク — 自分の「最新版どれ?」を1つ持ち込む</h3>
+        <p>いま手元で版が散らかっているファイルを1つ選び、リポジトリを作って登録→1回差し替え→Historyで確認、まで回してください（10分）。終わったら隣の人とHistoryを見せ合い、コミットメッセージが「未来の自分に通じるか」を確かめます。</p>
+      </div>
+
+{{PAGE_NAV}}
+    </div>
+  </section>

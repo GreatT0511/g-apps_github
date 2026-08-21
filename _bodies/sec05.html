@@ -1,0 +1,110 @@
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">SECTION 05</span>
+      <h1 class="page-hero-title">§5　実践設計① 生徒の探究を「1人1リポジトリ」で残す</h1>
+      <p class="page-hero-description">
+        探究の成果物は年度末の発表で消え、問いの変遷は誰にも引き継がれない——ここを変えます。
+        生徒1人にリポジトリ1つ。READMEが「問いの現在地」、Issueが「問いのログ」、コミットが「選択の記録」になります。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-content">
+
+      <p><strong>使いどころ: </strong>総合的な探究の時間、課題研究、卒業研究、部活動の研究記録。</p>
+      <p><strong>使う機能: </strong>テンプレートリポジトリ＋README＋Issue＋Collaborators</p>
+
+      <div class="section-header" id="s5-1">
+        <span class="section-label">5-1</span>
+        <h2 class="section-title">設計図 — 1人1箱の中身</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><span class="material-symbols-outlined">flag</span></div>
+          <h3 class="feature-title">README = 問いの現在地</h3>
+          <p class="feature-description">いまの問い・考えていること・次の一歩を常に最新に保つ表紙。書き換えるたびに履歴が残るので、<strong>問いがどう変わってきたかが後から全部たどれます</strong>。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><span class="material-symbols-outlined">sticky_note_2</span></div>
+          <h3 class="feature-title">Issue = 問いのログ</h3>
+          <p class="feature-description">調べたい疑問が湧いたら1件ずつIssueに。解決したら「わかったこと・出典」を書いて閉じる。<strong>閉じた付箋の山が、そのまま探究の足跡</strong>になります。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><span class="material-symbols-outlined">draw</span></div>
+          <h3 class="feature-title">コミット = 選択の記録</h3>
+          <p class="feature-description">AIを使った箇所は「AI案を修正して採用: 理由」と書いてコミット。<strong>SLOW AIの署名ログが、道具の標準機能として実装できます</strong>。</p>
+        </div>
+      </div>
+
+      <div class="section-header" id="s5-2" style="margin-top: var(--space-16);">
+        <span class="section-label">5-2</span>
+        <h2 class="section-title">手順1　先生が「ひな形の箱」を1つ作る</h2>
+      </div>
+      <ol class="bullet-list numbered">
+        <li>New repository → 名前 <strong>tankyu-template</strong> → Private → README付きで作成</li>
+        <li>READMEに下のテンプレを貼ってコミット</li>
+        <li><strong>Settings → 一般設定の一番上にある Template repository にチェック</strong>を入れる</li>
+        <li>これで生徒は <strong>Use this template</strong> ボタンから、自分のアカウントに同じ構造の箱を一発で作れます</li>
+      </ol>
+      <div class="prompt-box">
+        <div class="prompt-box-header">
+          <span class="prompt-box-title">探究リポジトリのREADMEテンプレ</span>
+          <span class="prompt-box-hint">クリックでコピー</span>
+        </div>
+        <div class="prompt-content copyable"># 探究: （仮のテーマ名）
+
+## いまの問い
+（一文で。変わったら書き換える——変わるのは前進です）
+
+## いま考えていること
+-
+
+## 次の一歩
+- [ ]
+
+## AIの使用記録
+AIを使ったときは、コミットメッセージに
+「AI案を採用/修正/棄却: 理由」を書くこと。
+
+## 参考にしたもの
+- （タイトル・URL・見た日）</div>
+      </div>
+
+      <div class="section-header" id="s5-3" style="margin-top: var(--space-16);">
+        <span class="section-label">5-3</span>
+        <h2 class="section-title">手順2　生徒に配る（授業1コマの流れ）</h2>
+      </div>
+      <ol class="bullet-list numbered">
+        <li>§1の手順で生徒がアカウントを作る（13歳以上・ユーザー名ルールは§7の配布資料で）</li>
+        <li>先生のテンプレリポジトリのURLを配り、<strong>Use this template → Create a new repository</strong>。名前は「tankyu-2026」等に統一、<strong>Private</strong>を選ばせる</li>
+        <li>生徒が <strong>Settings → Collaborators</strong> で先生を招待する（これで先生は全員の箱を見られます）</li>
+        <li>初回のワーク: READMEの「いまの問い」を書いてコミット——<strong>これが探究の最初の履歴</strong>になります</li>
+      </ol>
+
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">visibility</span>
+        <div>
+          <strong>公開範囲の原則。</strong>探究リポジトリは<strong>Private＋先生をCollaborator</strong>が基本形。校外に見せたい成果ができたら、そのときに「公開用リポジトリへ移す」を生徒と一緒に判断します（§7のルール参照）。最初からPublicにしない。
+        </div>
+      </div>
+
+      <div class="section-header" id="s5-4" style="margin-top: var(--space-16);">
+        <span class="section-label">5-4</span>
+        <h2 class="section-title">運用 — 週1回の「現在地コミット」だけ守る</h2>
+      </div>
+      <ul class="bullet-list">
+        <li>毎週の探究の時間の最後5分を「READMEを現在地に更新してコミットする時間」に固定する</li>
+        <li>先生の見取りは、成果物ではなく<strong>Historyを読む</strong>——問いの変遷とコミットメッセージの質(「なぜ」が書けているか)が、そのまま評価資料になります</li>
+        <li>年度末: 発表スライドより先に、自分のHistoryを読み返して「問いはどう変わったか」を語らせる——ふりかえりが自動的に一次資料つきになります</li>
+        <li>卒業しても箱は本人のもの。<strong>後輩に見せたい記録は、学校の「先輩アーカイブ」リポジトリへコピーして引き継ぐ</strong>(Thought Scape=問いの景観が毎年リセットされない学校になります)</li>
+      </ul>
+
+      <div class="work-section">
+        <h3>ワーク — テンプレの箱を作る</h3>
+        <p>自分の担当を想定して、tankyu-template を実際に作り、Template repositoryにチェックを入れるところまで(10分)。READMEの項目は自分の学校の探究の型に合わせて増減してください。</p>
+      </div>
+
+{{PAGE_NAV}}
+    </div>
+  </section>

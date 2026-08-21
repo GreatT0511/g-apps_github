@@ -1,0 +1,87 @@
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">SECTION 04</span>
+      <h1 class="page-hero-title">§4　ハンズオン② 教材ページを5分でWebに公開する</h1>
+      <p class="page-hero-description">
+        GitHub Pages を使うと、リポジトリに置いたMarkdownがそのままWebページになります。
+        サーバー契約なし・無料・URLを配るだけ。授業のリンク集、単元のまとめページ、保護者向け案内に使えます。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-content">
+
+      <p><strong>使いどころ: </strong>授業リンク集・単元まとめ・部活動や行事の案内ページ。</p>
+      <p><strong>使う機能: </strong>GitHub Pages（公開リポジトリなら無料）</p>
+
+      <div class="section-header" id="s4-1">
+        <span class="section-label">4-1</span>
+        <h2 class="section-title">公開する前に、これだけは</h2>
+      </div>
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">public</span>
+        <div>
+          <strong>Pagesは「全世界公開」です。</strong>無料でPagesを使えるのは<strong>Public（公開）リポジトリ</strong>——つまり、ページだけでなく<strong>リポジトリの中身と履歴もすべて世界から見えます</strong>。生徒の氏名・写真・校内事情は載せない。公開してよいものだけを入れる専用リポジトリを作るのが原則です。
+        </div>
+      </div>
+
+      <div class="section-header" id="s4-2" style="margin-top: var(--space-16);">
+        <span class="section-label">4-2</span>
+        <h2 class="section-title">手順　リポジトリ作成から公開まで</h2>
+      </div>
+      <ol class="bullet-list numbered">
+        <li>New repository → 名前は例えば <strong>rika-links</strong> → 今回は <strong>Public</strong> → README付きで作成</li>
+        <li>README.md を開き、下のテンプレを貼って自分の授業用に書き換え、コミット</li>
+        <li><strong>Settings → Pages</strong> を開く</li>
+        <li>Build and deployment の Source が <strong>Deploy from a branch</strong> になっていることを確認し、Branch を <strong>main</strong> にして <strong>Save</strong></li>
+        <li>1〜2分待ってページを再読み込みすると、上部に公開URLが表示されます: <strong>https://ユーザー名.github.io/リポジトリ名/</strong></li>
+        <li>このURLを生徒に配る（Classroomの投稿・QRコード等）</li>
+      </ol>
+
+      <div class="prompt-box">
+        <div class="prompt-box-header">
+          <span class="prompt-box-title">授業リンク集のテンプレ（README.mdに貼り付け）</span>
+          <span class="prompt-box-hint">クリックでコピー</span>
+        </div>
+        <div class="prompt-content copyable"># 理科（中2）授業ページ
+
+## 今週の単元
+- 電流と電圧 — [NHK for School の実験動画](https://www.nhk.or.jp/school/)
+- ふりかえりフォーム — （フォームのURL）
+
+## いつでも使うもの
+- [教科書会社の資料ページ](https://example.com)
+- 質問箱 — （フォームのURL）
+
+## 更新履歴
+このページの変更履歴は、リポジトリの History からいつでも確認できます。</div>
+      </div>
+
+      <div class="section-header" id="s4-3" style="margin-top: var(--space-16);">
+        <span class="section-label">4-3</span>
+        <h2 class="section-title">運用のコツ</h2>
+      </div>
+      <ul class="bullet-list">
+        <li><strong>更新はREADMEを直すだけ。</strong>コミットすると1〜2分で公開ページに反映されます。URLは変わりません</li>
+        <li>ページを増やしたいときは、リポジトリに <strong>別の.mdファイル</strong>を作ればそれも自動でページになります（例: dai1shou.md → /dai1shou）</li>
+        <li>画像はリポジトリにアップして相対パスで貼れます——ただし<strong>人物が写っているものは載せない</strong></li>
+        <li>リンク集の変更もコミットメッセージに理由を書く癖を——「リンク差し替え: 動画が非公開になったため」。次の担当者への引き継ぎ書になります</li>
+      </ul>
+
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">workspace_premium</span>
+        <div>
+          <strong>発展①: プロフィールREADME。</strong>ユーザー名と同じ名前のリポジトリ（例: tanaka-sensei/tanaka-sensei）を作ると、そのREADMEが自分のプロフィールページに表示されます。教員としての実践ポートフォリオの表紙にどうぞ。<br>
+          <strong>発展②: 非公開のままWeb公開。</strong>Privateリポジトリを社内限定でPages公開するには有料プランが必要です。まずは「公開専用リポジトリを分ける」運用で十分です。
+        </div>
+      </div>
+
+      <div class="work-section">
+        <h3>ワーク — 自分の授業リンク集を公開する</h3>
+        <p>テンプレを使って、担当授業のリンク集を1ページ公開してください（10分）。公開できたら、URLを隣の人とスマホで開き合って確認。「これなら生徒に配れるか?」の目で相互チェックします。</p>
+      </div>
+
+{{PAGE_NAV}}
+    </div>
+  </section>

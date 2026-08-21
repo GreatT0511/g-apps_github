@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231A73E8'/><text x='32' y='45' font-size='38' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>G</text></svg>">
+  <title>§7 生徒に使わせる日のルールづくり | GitHub活用 | G-Apps.jp アカデミー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDGothic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/style.css?v=20260819">
+</head>
+<body>
+  <div class="page-transition-overlay">
+    <span class="transition-text">G-Apps.jp アカデミー</span>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">G</span>
+        <span>G-Apps.jp アカデミー</span>
+      </a>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Overview</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-trigger">Workshop
+            <span class="material-symbols-outlined">expand_more</span>
+          </span>
+          <div class="nav-dropdown-menu">
+            <a href="sec01.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">fact_check</span>§1 はじめる前のチェック
+            </a>
+            <a href="sec02.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">school</span>§2 GitHubの基礎
+            </a>
+            <a href="sec03.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">history_edu</span>§3 教材の「最新版どれ?」をなくす
+            </a>
+            <a href="sec04.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">public</span>§4 教材ページを5分でWeb公開
+            </a>
+            <a href="sec05.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">auto_stories</span>§5 探究を1人1リポジトリで残す
+            </a>
+            <a href="sec06.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">rate_review</span>§6 生徒同士のレビューをプルリクで回す
+            </a>
+            <a href="sec07.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">shield</span>§7 生徒に使わせる日のルールづくり
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="material-symbols-outlined icon-moon">dark_mode</span>
+          <span class="material-symbols-outlined icon-sun">light_mode</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="drawer" id="drawer">
+    <div class="drawer-header">
+      <span class="drawer-title">Menu</span>
+      <button class="drawer-close" id="drawerClose">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="drawer-content">
+      <a href="index.html" class="drawer-link">
+        <span class="material-symbols-outlined">home</span> Overview
+      </a>
+      <div class="drawer-divider"></div>
+      <span class="drawer-section-label">Workshop</span>
+      <a href="sec01.html" class="drawer-link">
+        <span class="material-symbols-outlined">fact_check</span> §1 はじめる前のチェック
+      </a>
+      <a href="sec02.html" class="drawer-link">
+        <span class="material-symbols-outlined">school</span> §2 GitHubの基礎
+      </a>
+      <a href="sec03.html" class="drawer-link">
+        <span class="material-symbols-outlined">history_edu</span> §3 教材の「最新版どれ?」をなくす
+      </a>
+      <a href="sec04.html" class="drawer-link">
+        <span class="material-symbols-outlined">public</span> §4 教材ページを5分でWeb公開
+      </a>
+      <a href="sec05.html" class="drawer-link">
+        <span class="material-symbols-outlined">auto_stories</span> §5 探究を1人1リポジトリで残す
+      </a>
+      <a href="sec06.html" class="drawer-link">
+        <span class="material-symbols-outlined">rate_review</span> §6 生徒同士のレビューをプルリクで回す
+      </a>
+      <a href="sec07.html" class="drawer-link active">
+        <span class="material-symbols-outlined">shield</span> §7 生徒に使わせる日のルールづくり
+      </a>
+    </div>
+  </div>
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">SECTION 07</span>
+      <h1 class="page-hero-title">§7　生徒に使わせる日のルールづくり（配布ひな形つき）</h1>
+      <p class="page-hero-description">
+        道具は配る前のルールで決まります。ここまでの§で先生自身が体験した安全設定と作法を、
+        生徒に配る一枚のルールに圧縮しました。ひな形をコピーして、学校の実情に合わせて削ってください。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-content">
+
+      <div class="section-header" id="s7-1">
+        <span class="section-label">7-1</span>
+        <h2 class="section-title">配布ひな形 — クラス掲示・配布用ルール</h2>
+      </div>
+      <div class="prompt-box">
+        <div class="prompt-box-header">
+          <span class="prompt-box-title">GitHubをつかうときの約束（ひな形・書き換えて使う)</span>
+          <span class="prompt-box-hint">クリックでコピー</span>
+        </div>
+        <div class="prompt-content copyable"># GitHubをつかうときの約束
+
+## アカウント
+1. アカウントは13歳になってから作る（規約で決まっています）
+2. ユーザー名に本名・学校名・生年月日を入れない
+3. 二段階認証（パスキー）を設定する。パスワードは誰にも教えない
+4. 共有PCでは使い終わったら必ずログアウトする
+
+## 書いていいもの・ダメなもの
+5. 載せてよい: 自分の考え・調べたこと・作ったもの
+6. 載せない: 住所・電話・顔写真・友達の名前・成績・家の事情
+7. 教科書や本の丸写しを載せない（引用は出典を書いて一部だけ）
+
+## 公開範囲
+8. リポジトリは迷ったらPrivate（非公開）
+9. Publicにする前に、必ず先生と一緒に中身を確認する
+10. 一度ネットに出たものは消せない、と考えて公開する
+
+## AIと使うとき
+11. AIの答えをそのまま貼らない。直して使ったら
+    コミットメッセージに「AI案を修正して採用: 理由」と書く
+
+## こまったら
+12. 知らない人からの連絡・変な招待は開かず、先生に見せる
+13. 失敗してもアカウントは消さない。履歴は先生と一緒に直せる</div>
+      </div>
+
+      <div class="section-header" id="s7-2" style="margin-top: var(--space-16);">
+        <span class="section-label">7-2</span>
+        <h2 class="section-title">先生側の運用チェックリスト</h2>
+      </div>
+      <ul class="bullet-list">
+        <li><strong>年齢の確認</strong>: 13歳未満の生徒がいる学年では導入しない（学年進行を待つ）</li>
+        <li><strong>保護者への説明</strong>: 「個人アカウントを作り、原則非公開で学習記録に使う。公開時は学校が事前確認する」の2点を学年通信等で事前に。アカウントは保護者の同意のもと生徒本人が管理、が基本線です</li>
+        <li><strong>パスワードを預からない</strong>: 先生がパスワード一覧を持つ運用はしない。忘れた場合はGitHubの再設定手順(メール)で本人が戻す——これも教える内容の一部です</li>
+        <li><strong>見取りはCollaboratorで</strong>: 生徒のPrivateリポジトリに招待してもらう形にする(§5)。先生アカウントが生徒の箱の「合鍵」を持つ、が標準形</li>
+        <li><strong>公開前チェックの窓口を決める</strong>: 「Publicにしたい」の相談先(教科担任か情報担当か)を年度はじめに1本化する</li>
+        <li><strong>ルール自体を生徒と改訂する</strong>: 学期に1回、この約束をIssueにして「変えたい条文と理由」を生徒から募る——ルールづくりごと教材にできます</li>
+      </ul>
+
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">school</span>
+        <div>
+          <strong>発展: GitHub Education。</strong>大学進学後や高校でも、学生は<strong>GitHub Student Developer Pack</strong>(各種開発ツールの無料枠)を申請できます。進路指導の小ネタとして知っておくと、生徒の「この先どう使えるの?」に答えられます。
+        </div>
+      </div>
+
+      <div class="section-header" id="s7-3" style="margin-top: var(--space-16);">
+        <span class="section-label">7-3</span>
+        <h2 class="section-title">年度はじめの導入プラン（3コマ）</h2>
+      </div>
+      <div class="step-grid">
+        <div class="step-card">
+          <div class="step-header"><span class="step-number">1</span><h3 class="step-title">1コマ目 — 約束とアカウント</h3></div>
+          <div class="step-content"><p>ルールひな形を配って読み合わせ→アカウント作成(§1)→2FA設定まで。急がず、安全設定で1コマ使い切る。</p></div>
+        </div>
+        <div class="step-card">
+          <div class="step-header"><span class="step-number">2</span><h3 class="step-title">2コマ目 — 最初の箱と履歴</h3></div>
+          <div class="step-content"><p>テンプレから探究リポジトリを作り(§5)、READMEに「いまの問い」を書いて最初のコミット。先生をCollaborator招待。</p></div>
+        </div>
+        <div class="step-card">
+          <div class="step-header"><span class="step-number">3</span><h3 class="step-title">3コマ目 — 提案と署名</h3></div>
+          <div class="step-content"><p>ペアでプルリク1往復(§6)。「提案する・理由つきで決める」の型を体験させたら、あとは週1の現在地コミットで回る。</p></div>
+        </div>
+      </div>
+
+      <div class="section-header" id="s7-4" style="margin-top: var(--space-16);">
+        <span class="section-label">7-4</span>
+        <h2 class="section-title">むすび — 最初の予想に戻る</h2>
+      </div>
+      <div class="content-block">
+        <p>Overviewで書いた予想——「GitHubで学校の何が変わると思いますか?」——をいま読み返してください。書き直したくなったら、元の答えを消さずに書き足してください。<strong>その書き足しの履歴こそ、今日いちばんのGitHub的な行為です。</strong></p>
+        <p>GitHubは提出箱ではありません。<strong>「いつ・誰が・何を・なぜ」が残る、学びの履歴装置</strong>です。プリントの版管理(§3)も、探究の問いの変遷(§5)も、生徒同士の提案と決定(§6)も、残っているのは同じもの——選択の記録です。先生が明日転勤しても、生徒が卒業しても、この履歴は本人と一緒に動きます。まず先生自身の「最新版どれ?」を1つ、今日リポジトリにしてください。</p>
+      </div>
+
+      <div class="page-nav">
+        <a href="sec06.html"><span class="material-symbols-outlined">arrow_back</span> §6 生徒同士のレビューをプルリクで回す</a>
+        <a href="index.html">Overviewへ戻る <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">G-Apps.jp アカデミー 2026 / スクールエージェント株式会社</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">
+    <span class="material-symbols-outlined">check_circle</span> Copied
+  </div>
+
+  <script src="js/main.js?v=20260819"></script>
+  <script src="js/copy.js?v=20260819"></script>
+</body>
+</html>

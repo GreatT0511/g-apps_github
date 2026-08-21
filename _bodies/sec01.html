@@ -1,0 +1,103 @@
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">SECTION 01</span>
+      <h1 class="page-hero-title">§1　はじめる前のチェック — アカウントと安全設定</h1>
+      <p class="page-hero-description">
+        先生自身のアカウントを1つ、安全な状態で用意します。ここで決めること（ユーザー名・メール・二段階認証）は、
+        あとで生徒に教えるときの手本がそのまま自分の設定になります。所要10分。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-content">
+
+      <div class="section-header" id="s1-1">
+        <span class="section-label">1-1</span>
+        <h2 class="section-title">作成前に決める3つのこと</h2>
+      </div>
+      <div class="step-grid">
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-number">1</span>
+            <h3 class="step-title">どのメールで作るか</h3>
+          </div>
+          <div class="step-content">
+            <p><strong>個人メール推奨。</strong>GitHubのアカウントは学校の備品ではなく、転勤しても持ち歩く個人の資産です。個人メールで作成し、必要なら学校メールを「追加のメールアドレス」として後から登録します（学校を離れたら外すだけ）。</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-number">2</span>
+            <h3 class="step-title">ユーザー名の決め方</h3>
+          </div>
+          <div class="step-content">
+            <p>半角英数とハイフンのみ。<strong>本名フルネームや学校名は入れない</strong>のが無難です（URLとして全世界に見えます）。あとから変更できますが、リンク切れの元になるので最初に決め切るのが吉。生徒に教えるときも同じルールを使います。</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-number">3</span>
+            <h3 class="step-title">プランはFreeで足りるか</h3>
+          </div>
+          <div class="step-content">
+            <p><strong>足ります。</strong>無料プランで非公開リポジトリも作り放題、共同編集者も無制限。この講座の内容はすべて無料の範囲です（例外は§4の「非公開のままWeb公開」だけ）。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header" id="s1-2" style="margin-top: var(--space-16);">
+        <span class="section-label">1-2</span>
+        <h2 class="section-title">アカウントを作る</h2>
+      </div>
+      <ol class="bullet-list numbered">
+        <li><a href="https://github.com/signup" target="_blank" rel="noopener">github.com/signup</a> を開く</li>
+        <li>メールアドレス → パスワード → ユーザー名の順に入力する（画面は英語ですが、この3つだけです）</li>
+        <li>届いた確認コードを入力する（Launch code）</li>
+        <li>アンケート画面が出たら下部の Skip でかまいません。プランは <strong>Free</strong> を選ぶ</li>
+      </ol>
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">warning</span>
+        <div>
+          <strong>年齢の線引きを最初に確認。</strong>GitHubの利用規約では<strong>13歳以上</strong>からアカウントを作れます。中学1年生には13歳未満の生徒がいます——生徒展開は「13歳になってから」を大原則にしてください（§7で配布ルールにも入れています）。
+        </div>
+      </div>
+
+      <div class="section-header" id="s1-3" style="margin-top: var(--space-16);">
+        <span class="section-label">1-3</span>
+        <h2 class="section-title">安全設定を2つだけ（ここが§1の本体）</h2>
+      </div>
+      <div class="content-block">
+        <h3>① 二段階認証（2FA）を有効にする</h3>
+        <ol class="bullet-list numbered">
+          <li>右上のアイコン → <strong>Settings</strong> → 左メニュー <strong>Password and authentication</strong></li>
+          <li><strong>Two-factor authentication</strong> の Enable を押す</li>
+          <li>認証アプリ（Google Authenticator等）でQRコードを読み、6桁コードを入力。<strong>パスキー（指紋・顔認証）の登録も可</strong>で、こちらの方が生徒には教えやすいです</li>
+          <li>表示される<strong>リカバリーコードを必ず保存</strong>する（印刷して職員室の鍵付き引き出しでも可）</li>
+        </ol>
+        <h3 style="margin-top: var(--space-8);">② メールアドレスを非公開にする</h3>
+        <ol class="bullet-list numbered">
+          <li>Settings → 左メニュー <strong>Emails</strong></li>
+          <li><strong>Keep my email addresses private</strong> にチェック</li>
+          <li>これで作業履歴に本物のメールアドレスが載らなくなります（代わりにGitHubが用意する専用アドレスが使われます）</li>
+        </ol>
+      </div>
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">devices</span>
+        <div>
+          <strong>共有PCの注意。</strong>職員室・PC教室の共有端末では、使い終わったら必ずログアウト。ブラウザにパスワードを保存しない。この2つも、生徒に渡すルールの原型です。
+        </div>
+      </div>
+
+      <div class="work-section">
+        <h3>ここまでのチェック</h3>
+        <ul class="bullet-list">
+          <li>自分のアカウントページ（github.com/ユーザー名）が開ける</li>
+          <li>2FAが有効になっている（Settingsに緑のEnabledが出る）</li>
+          <li>リカバリーコードを保存した</li>
+        </ul>
+      </div>
+
+{{PAGE_NAV}}
+    </div>
+  </section>

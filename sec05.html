@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231A73E8'/><text x='32' y='45' font-size='38' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>G</text></svg>">
+  <title>§5 探究を1人1リポジトリで残す | GitHub活用 | G-Apps.jp アカデミー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDGothic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/style.css?v=20260819">
+</head>
+<body>
+  <div class="page-transition-overlay">
+    <span class="transition-text">G-Apps.jp アカデミー</span>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">G</span>
+        <span>G-Apps.jp アカデミー</span>
+      </a>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Overview</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-trigger">Workshop
+            <span class="material-symbols-outlined">expand_more</span>
+          </span>
+          <div class="nav-dropdown-menu">
+            <a href="sec01.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">fact_check</span>§1 はじめる前のチェック
+            </a>
+            <a href="sec02.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">school</span>§2 GitHubの基礎
+            </a>
+            <a href="sec03.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">history_edu</span>§3 教材の「最新版どれ?」をなくす
+            </a>
+            <a href="sec04.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">public</span>§4 教材ページを5分でWeb公開
+            </a>
+            <a href="sec05.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">auto_stories</span>§5 探究を1人1リポジトリで残す
+            </a>
+            <a href="sec06.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">rate_review</span>§6 生徒同士のレビューをプルリクで回す
+            </a>
+            <a href="sec07.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">shield</span>§7 生徒に使わせる日のルールづくり
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="material-symbols-outlined icon-moon">dark_mode</span>
+          <span class="material-symbols-outlined icon-sun">light_mode</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="drawer" id="drawer">
+    <div class="drawer-header">
+      <span class="drawer-title">Menu</span>
+      <button class="drawer-close" id="drawerClose">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="drawer-content">
+      <a href="index.html" class="drawer-link">
+        <span class="material-symbols-outlined">home</span> Overview
+      </a>
+      <div class="drawer-divider"></div>
+      <span class="drawer-section-label">Workshop</span>
+      <a href="sec01.html" class="drawer-link">
+        <span class="material-symbols-outlined">fact_check</span> §1 はじめる前のチェック
+      </a>
+      <a href="sec02.html" class="drawer-link">
+        <span class="material-symbols-outlined">school</span> §2 GitHubの基礎
+      </a>
+      <a href="sec03.html" class="drawer-link">
+        <span class="material-symbols-outlined">history_edu</span> §3 教材の「最新版どれ?」をなくす
+      </a>
+      <a href="sec04.html" class="drawer-link">
+        <span class="material-symbols-outlined">public</span> §4 教材ページを5分でWeb公開
+      </a>
+      <a href="sec05.html" class="drawer-link active">
+        <span class="material-symbols-outlined">auto_stories</span> §5 探究を1人1リポジトリで残す
+      </a>
+      <a href="sec06.html" class="drawer-link">
+        <span class="material-symbols-outlined">rate_review</span> §6 生徒同士のレビューをプルリクで回す
+      </a>
+      <a href="sec07.html" class="drawer-link">
+        <span class="material-symbols-outlined">shield</span> §7 生徒に使わせる日のルールづくり
+      </a>
+    </div>
+  </div>
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">SECTION 05</span>
+      <h1 class="page-hero-title">§5　実践設計① 生徒の探究を「1人1リポジトリ」で残す</h1>
+      <p class="page-hero-description">
+        探究の成果物は年度末の発表で消え、問いの変遷は誰にも引き継がれない——ここを変えます。
+        生徒1人にリポジトリ1つ。READMEが「問いの現在地」、Issueが「問いのログ」、コミットが「選択の記録」になります。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-content">
+
+      <p><strong>使いどころ: </strong>総合的な探究の時間、課題研究、卒業研究、部活動の研究記録。</p>
+      <p><strong>使う機能: </strong>テンプレートリポジトリ＋README＋Issue＋Collaborators</p>
+
+      <div class="section-header" id="s5-1">
+        <span class="section-label">5-1</span>
+        <h2 class="section-title">設計図 — 1人1箱の中身</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><span class="material-symbols-outlined">flag</span></div>
+          <h3 class="feature-title">README = 問いの現在地</h3>
+          <p class="feature-description">いまの問い・考えていること・次の一歩を常に最新に保つ表紙。書き換えるたびに履歴が残るので、<strong>問いがどう変わってきたかが後から全部たどれます</strong>。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><span class="material-symbols-outlined">sticky_note_2</span></div>
+          <h3 class="feature-title">Issue = 問いのログ</h3>
+          <p class="feature-description">調べたい疑問が湧いたら1件ずつIssueに。解決したら「わかったこと・出典」を書いて閉じる。<strong>閉じた付箋の山が、そのまま探究の足跡</strong>になります。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><span class="material-symbols-outlined">draw</span></div>
+          <h3 class="feature-title">コミット = 選択の記録</h3>
+          <p class="feature-description">AIを使った箇所は「AI案を修正して採用: 理由」と書いてコミット。<strong>SLOW AIの署名ログが、道具の標準機能として実装できます</strong>。</p>
+        </div>
+      </div>
+
+      <div class="section-header" id="s5-2" style="margin-top: var(--space-16);">
+        <span class="section-label">5-2</span>
+        <h2 class="section-title">手順1　先生が「ひな形の箱」を1つ作る</h2>
+      </div>
+      <ol class="bullet-list numbered">
+        <li>New repository → 名前 <strong>tankyu-template</strong> → Private → README付きで作成</li>
+        <li>READMEに下のテンプレを貼ってコミット</li>
+        <li><strong>Settings → 一般設定の一番上にある Template repository にチェック</strong>を入れる</li>
+        <li>これで生徒は <strong>Use this template</strong> ボタンから、自分のアカウントに同じ構造の箱を一発で作れます</li>
+      </ol>
+      <div class="prompt-box">
+        <div class="prompt-box-header">
+          <span class="prompt-box-title">探究リポジトリのREADMEテンプレ</span>
+          <span class="prompt-box-hint">クリックでコピー</span>
+        </div>
+        <div class="prompt-content copyable"># 探究: （仮のテーマ名）
+
+## いまの問い
+（一文で。変わったら書き換える——変わるのは前進です）
+
+## いま考えていること
+-
+
+## 次の一歩
+- [ ]
+
+## AIの使用記録
+AIを使ったときは、コミットメッセージに
+「AI案を採用/修正/棄却: 理由」を書くこと。
+
+## 参考にしたもの
+- （タイトル・URL・見た日）</div>
+      </div>
+
+      <div class="section-header" id="s5-3" style="margin-top: var(--space-16);">
+        <span class="section-label">5-3</span>
+        <h2 class="section-title">手順2　生徒に配る（授業1コマの流れ）</h2>
+      </div>
+      <ol class="bullet-list numbered">
+        <li>§1の手順で生徒がアカウントを作る（13歳以上・ユーザー名ルールは§7の配布資料で）</li>
+        <li>先生のテンプレリポジトリのURLを配り、<strong>Use this template → Create a new repository</strong>。名前は「tankyu-2026」等に統一、<strong>Private</strong>を選ばせる</li>
+        <li>生徒が <strong>Settings → Collaborators</strong> で先生を招待する（これで先生は全員の箱を見られます）</li>
+        <li>初回のワーク: READMEの「いまの問い」を書いてコミット——<strong>これが探究の最初の履歴</strong>になります</li>
+      </ol>
+
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">visibility</span>
+        <div>
+          <strong>公開範囲の原則。</strong>探究リポジトリは<strong>Private＋先生をCollaborator</strong>が基本形。校外に見せたい成果ができたら、そのときに「公開用リポジトリへ移す」を生徒と一緒に判断します（§7のルール参照）。最初からPublicにしない。
+        </div>
+      </div>
+
+      <div class="section-header" id="s5-4" style="margin-top: var(--space-16);">
+        <span class="section-label">5-4</span>
+        <h2 class="section-title">運用 — 週1回の「現在地コミット」だけ守る</h2>
+      </div>
+      <ul class="bullet-list">
+        <li>毎週の探究の時間の最後5分を「READMEを現在地に更新してコミットする時間」に固定する</li>
+        <li>先生の見取りは、成果物ではなく<strong>Historyを読む</strong>——問いの変遷とコミットメッセージの質(「なぜ」が書けているか)が、そのまま評価資料になります</li>
+        <li>年度末: 発表スライドより先に、自分のHistoryを読み返して「問いはどう変わったか」を語らせる——ふりかえりが自動的に一次資料つきになります</li>
+        <li>卒業しても箱は本人のもの。<strong>後輩に見せたい記録は、学校の「先輩アーカイブ」リポジトリへコピーして引き継ぐ</strong>(Thought Scape=問いの景観が毎年リセットされない学校になります)</li>
+      </ul>
+
+      <div class="work-section">
+        <h3>ワーク — テンプレの箱を作る</h3>
+        <p>自分の担当を想定して、tankyu-template を実際に作り、Template repositoryにチェックを入れるところまで(10分)。READMEの項目は自分の学校の探究の型に合わせて増減してください。</p>
+      </div>
+
+      <div class="page-nav">
+        <a href="sec04.html"><span class="material-symbols-outlined">arrow_back</span> §4 教材ページを5分でWeb公開</a>
+        <a href="sec06.html">§6 生徒同士のレビューをプルリクで回す <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">G-Apps.jp アカデミー 2026 / スクールエージェント株式会社</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">
+    <span class="material-symbols-outlined">check_circle</span> Copied
+  </div>
+
+  <script src="js/main.js?v=20260819"></script>
+  <script src="js/copy.js?v=20260819"></script>
+</body>
+</html>

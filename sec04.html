@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231A73E8'/><text x='32' y='45' font-size='38' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>G</text></svg>">
+  <title>§4 教材ページを5分でWeb公開 | GitHub活用 | G-Apps.jp アカデミー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDGothic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/style.css?v=20260819">
+</head>
+<body>
+  <div class="page-transition-overlay">
+    <span class="transition-text">G-Apps.jp アカデミー</span>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">G</span>
+        <span>G-Apps.jp アカデミー</span>
+      </a>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Overview</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-trigger">Workshop
+            <span class="material-symbols-outlined">expand_more</span>
+          </span>
+          <div class="nav-dropdown-menu">
+            <a href="sec01.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">fact_check</span>§1 はじめる前のチェック
+            </a>
+            <a href="sec02.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">school</span>§2 GitHubの基礎
+            </a>
+            <a href="sec03.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">history_edu</span>§3 教材の「最新版どれ?」をなくす
+            </a>
+            <a href="sec04.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">public</span>§4 教材ページを5分でWeb公開
+            </a>
+            <a href="sec05.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">auto_stories</span>§5 探究を1人1リポジトリで残す
+            </a>
+            <a href="sec06.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">rate_review</span>§6 生徒同士のレビューをプルリクで回す
+            </a>
+            <a href="sec07.html" class="nav-dropdown-item">
+              <span class="material-symbols-outlined">shield</span>§7 生徒に使わせる日のルールづくり
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="material-symbols-outlined icon-moon">dark_mode</span>
+          <span class="material-symbols-outlined icon-sun">light_mode</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="drawer" id="drawer">
+    <div class="drawer-header">
+      <span class="drawer-title">Menu</span>
+      <button class="drawer-close" id="drawerClose">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="drawer-content">
+      <a href="index.html" class="drawer-link">
+        <span class="material-symbols-outlined">home</span> Overview
+      </a>
+      <div class="drawer-divider"></div>
+      <span class="drawer-section-label">Workshop</span>
+      <a href="sec01.html" class="drawer-link">
+        <span class="material-symbols-outlined">fact_check</span> §1 はじめる前のチェック
+      </a>
+      <a href="sec02.html" class="drawer-link">
+        <span class="material-symbols-outlined">school</span> §2 GitHubの基礎
+      </a>
+      <a href="sec03.html" class="drawer-link">
+        <span class="material-symbols-outlined">history_edu</span> §3 教材の「最新版どれ?」をなくす
+      </a>
+      <a href="sec04.html" class="drawer-link active">
+        <span class="material-symbols-outlined">public</span> §4 教材ページを5分でWeb公開
+      </a>
+      <a href="sec05.html" class="drawer-link">
+        <span class="material-symbols-outlined">auto_stories</span> §5 探究を1人1リポジトリで残す
+      </a>
+      <a href="sec06.html" class="drawer-link">
+        <span class="material-symbols-outlined">rate_review</span> §6 生徒同士のレビューをプルリクで回す
+      </a>
+      <a href="sec07.html" class="drawer-link">
+        <span class="material-symbols-outlined">shield</span> §7 生徒に使わせる日のルールづくり
+      </a>
+    </div>
+  </div>
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">SECTION 04</span>
+      <h1 class="page-hero-title">§4　ハンズオン② 教材ページを5分でWebに公開する</h1>
+      <p class="page-hero-description">
+        GitHub Pages を使うと、リポジトリに置いたMarkdownがそのままWebページになります。
+        サーバー契約なし・無料・URLを配るだけ。授業のリンク集、単元のまとめページ、保護者向け案内に使えます。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-content">
+
+      <p><strong>使いどころ: </strong>授業リンク集・単元まとめ・部活動や行事の案内ページ。</p>
+      <p><strong>使う機能: </strong>GitHub Pages（公開リポジトリなら無料）</p>
+
+      <div class="section-header" id="s4-1">
+        <span class="section-label">4-1</span>
+        <h2 class="section-title">公開する前に、これだけは</h2>
+      </div>
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">public</span>
+        <div>
+          <strong>Pagesは「全世界公開」です。</strong>無料でPagesを使えるのは<strong>Public（公開）リポジトリ</strong>——つまり、ページだけでなく<strong>リポジトリの中身と履歴もすべて世界から見えます</strong>。生徒の氏名・写真・校内事情は載せない。公開してよいものだけを入れる専用リポジトリを作るのが原則です。
+        </div>
+      </div>
+
+      <div class="section-header" id="s4-2" style="margin-top: var(--space-16);">
+        <span class="section-label">4-2</span>
+        <h2 class="section-title">手順　リポジトリ作成から公開まで</h2>
+      </div>
+      <ol class="bullet-list numbered">
+        <li>New repository → 名前は例えば <strong>rika-links</strong> → 今回は <strong>Public</strong> → README付きで作成</li>
+        <li>README.md を開き、下のテンプレを貼って自分の授業用に書き換え、コミット</li>
+        <li><strong>Settings → Pages</strong> を開く</li>
+        <li>Build and deployment の Source が <strong>Deploy from a branch</strong> になっていることを確認し、Branch を <strong>main</strong> にして <strong>Save</strong></li>
+        <li>1〜2分待ってページを再読み込みすると、上部に公開URLが表示されます: <strong>https://ユーザー名.github.io/リポジトリ名/</strong></li>
+        <li>このURLを生徒に配る（Classroomの投稿・QRコード等）</li>
+      </ol>
+
+      <div class="prompt-box">
+        <div class="prompt-box-header">
+          <span class="prompt-box-title">授業リンク集のテンプレ（README.mdに貼り付け）</span>
+          <span class="prompt-box-hint">クリックでコピー</span>
+        </div>
+        <div class="prompt-content copyable"># 理科（中2）授業ページ
+
+## 今週の単元
+- 電流と電圧 — [NHK for School の実験動画](https://www.nhk.or.jp/school/)
+- ふりかえりフォーム — （フォームのURL）
+
+## いつでも使うもの
+- [教科書会社の資料ページ](https://example.com)
+- 質問箱 — （フォームのURL）
+
+## 更新履歴
+このページの変更履歴は、リポジトリの History からいつでも確認できます。</div>
+      </div>
+
+      <div class="section-header" id="s4-3" style="margin-top: var(--space-16);">
+        <span class="section-label">4-3</span>
+        <h2 class="section-title">運用のコツ</h2>
+      </div>
+      <ul class="bullet-list">
+        <li><strong>更新はREADMEを直すだけ。</strong>コミットすると1〜2分で公開ページに反映されます。URLは変わりません</li>
+        <li>ページを増やしたいときは、リポジトリに <strong>別の.mdファイル</strong>を作ればそれも自動でページになります（例: dai1shou.md → /dai1shou）</li>
+        <li>画像はリポジトリにアップして相対パスで貼れます——ただし<strong>人物が写っているものは載せない</strong></li>
+        <li>リンク集の変更もコミットメッセージに理由を書く癖を——「リンク差し替え: 動画が非公開になったため」。次の担当者への引き継ぎ書になります</li>
+      </ul>
+
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">workspace_premium</span>
+        <div>
+          <strong>発展①: プロフィールREADME。</strong>ユーザー名と同じ名前のリポジトリ（例: tanaka-sensei/tanaka-sensei）を作ると、そのREADMEが自分のプロフィールページに表示されます。教員としての実践ポートフォリオの表紙にどうぞ。<br>
+          <strong>発展②: 非公開のままWeb公開。</strong>Privateリポジトリを社内限定でPages公開するには有料プランが必要です。まずは「公開専用リポジトリを分ける」運用で十分です。
+        </div>
+      </div>
+
+      <div class="work-section">
+        <h3>ワーク — 自分の授業リンク集を公開する</h3>
+        <p>テンプレを使って、担当授業のリンク集を1ページ公開してください（10分）。公開できたら、URLを隣の人とスマホで開き合って確認。「これなら生徒に配れるか?」の目で相互チェックします。</p>
+      </div>
+
+      <div class="page-nav">
+        <a href="sec03.html"><span class="material-symbols-outlined">arrow_back</span> §3 教材の「最新版どれ?」をなくす</a>
+        <a href="sec05.html">§5 探究を1人1リポジトリで残す <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">G-Apps.jp アカデミー 2026 / スクールエージェント株式会社</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">
+    <span class="material-symbols-outlined">check_circle</span> Copied
+  </div>
+
+  <script src="js/main.js?v=20260819"></script>
+  <script src="js/copy.js?v=20260819"></script>
+</body>
+</html>
