@@ -7,6 +7,7 @@ SITE = "GitHub活用 | G-Apps.jp アカデミー"
 
 PAGES = [
     ("index",  None,          "home",        "Overview"),
+    ("sec00",  "SECTION 00",  "person_add",  "§0 アカウント作成手順"),
     ("sec01",  "SECTION 01",  "fact_check",  "§1 はじめる前のチェック"),
     ("sec02",  "SECTION 02",  "school",      "§2 GitHubの基礎"),
     ("sec03",  "SECTION 03",  "history_edu", "§3 教材の「最新版どれ?」をなくす"),

@@ -1,0 +1,85 @@
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">SECTION 00</span>
+      <h1 class="page-hero-title">§0　アカウント作成手順 — 画面つき5ステップ</h1>
+      <p class="page-hero-description">
+        実際の画面を見ながら、GitHubのアカウントを作ります。ここではGoogleアカウント連携で作る手順を紹介します（パスワードを増やさずに済み、学校でのGoogle運用とも相性がよい方法です）。所要3分。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-content">
+
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">info</span>
+        <div class="notice-content">
+          <strong>先に決めておくこと：</strong>どのGoogleアカウントで作るかです。GitHubのアカウントは転勤しても持ち歩く個人の資産なので、<strong>個人のGoogleアカウント推奨</strong>です（考え方は<a href="sec01.html">§1-1</a>参照）。メールアドレス＋パスワードで作る従来の方法でも問題ありません（<a href="sec01.html">§1-2</a>に手順があります）。
+        </div>
+      </div>
+
+      <div class="section-header" id="s0-1" style="margin-top: var(--space-12);">
+        <span class="section-label">STEP 1</span>
+        <h2 class="section-title">GitHubのサイトを開く</h2>
+      </div>
+      <p>検索で「github」と入れ、<strong>GitHub Japan（github.co.jp）</strong>を開きます。アドレスバーに <strong>github.co.jp</strong> と直接入力してもかまいません（検索結果には広告が混ざることがあるため、URL直打ちのほうが確実です）。</p>
+      <figure class="screenshot">
+        <img src="img/account/01_google_search.png" alt="Googleで「github」を検索し、GitHub Japanの検索結果を開く画面">
+        <figcaption>STEP 1：検索結果の「GitHub」をクリック</figcaption>
+      </figure>
+
+      <div class="section-header" id="s0-2" style="margin-top: var(--space-16);">
+        <span class="section-label">STEP 2</span>
+        <h2 class="section-title">「GitHubに登録する」をクリック</h2>
+      </div>
+      <p>トップページ中央の緑のボタン<strong>「GitHubに登録する」</strong>をクリックします。英語ページに切り替わりますが、入力するのはこの後の1画面だけです。</p>
+      <figure class="screenshot">
+        <img src="img/account/02_github_top.png" alt="GitHubトップページの「GitHubに登録する」ボタン">
+        <figcaption>STEP 2：トップページ中央の登録ボタン</figcaption>
+      </figure>
+
+      <div class="section-header" id="s0-3" style="margin-top: var(--space-16);">
+        <span class="section-label">STEP 3</span>
+        <h2 class="section-title">「Continue with Google」を選ぶ</h2>
+      </div>
+      <p>登録画面の最上部にある<strong>「Continue with Google」</strong>をクリックし、使うGoogleアカウントを選びます。メール欄・パスワード欄は入力不要になります。ふだん使いのブラウザに複数のGoogleアカウントが入っている場合は、<strong>どのアカウントを選んだか</strong>をメモしておきましょう（次回のログインで同じものを選びます）。</p>
+      <figure class="screenshot">
+        <img src="img/account/03_continue_with_google.png" alt="Sign up for GitHub画面のContinue with Googleボタン">
+        <figcaption>STEP 3：フォーム最上部の「Continue with Google」</figcaption>
+      </figure>
+
+      <div class="section-header" id="s0-4" style="margin-top: var(--space-16);">
+        <span class="section-label">STEP 4</span>
+        <h2 class="section-title">ユーザー名を決めて「Create account」</h2>
+      </div>
+      <p>メール欄にはGoogleアカウントのアドレスが自動で入ります。自分で決めるのは<strong>Username（ユーザー名）</strong>だけです。</p>
+      <ul class="bullet-list">
+        <li>半角英数とハイフンのみ。<strong>本名フルネームや学校名は入れない</strong>（URLとして全世界に公開されます。決め方は<a href="sec01.html">§1-1</a>）</li>
+        <li>Your Country/Region は <strong>Japan</strong> のままでOK</li>
+        <li>GitHub Copilot のチェックは<strong>任意</strong>です（後から変更できます）。Email preferences（お知らせメール）はオフのままで問題ありません</li>
+      </ul>
+      <p>入力欄の右端に緑のチェックが付いたら、<strong>「Create account」</strong>をクリックします。</p>
+      <figure class="screenshot">
+        <img src="img/account/04_username.png" alt="ユーザー名と国を確認してCreate accountを押す画面">
+        <figcaption>STEP 4：Usernameに緑のチェックが付いたら「Create account」</figcaption>
+      </figure>
+
+      <div class="section-header" id="s0-5" style="margin-top: var(--space-16);">
+        <span class="section-label">STEP 5</span>
+        <h2 class="section-title">ダッシュボードが出たら完了</h2>
+      </div>
+      <p>この画面（Home／Dashboard）が表示されたら、アカウント作成は完了です。左上の「Create repository」ボタンは§2で使うので、今は押さなくてかまいません。</p>
+      <figure class="screenshot">
+        <img src="img/account/05_dashboard.png" alt="アカウント作成完了後に表示されるGitHubのダッシュボード画面">
+        <figcaption>STEP 5：ログイン後のダッシュボード。これが「作成完了」の目印</figcaption>
+      </figure>
+
+      <div class="notice-box" style="margin-top: var(--space-12);">
+        <span class="material-symbols-outlined notice-icon">shield</span>
+        <div class="notice-content">
+          <strong>作ったら、その足で安全設定へ。</strong>アカウントは作って終わりではありません。<a href="sec01.html">§1「はじめる前のチェック」</a>で二段階認証などの安全設定を済ませてから、§2の最初のリポジトリ作成に進んでください。
+        </div>
+      </div>
+
+    </div>
+  </section>

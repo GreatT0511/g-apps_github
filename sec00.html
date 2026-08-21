@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231A73E8'/><text x='32' y='45' font-size='38' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>G</text></svg>">
-  <title>§3 教材の「最新版どれ?」をなくす | GitHub活用 | G-Apps.jp アカデミー</title>
+  <title>§0 アカウント作成手順 | GitHub活用 | G-Apps.jp アカデミー</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDGothic:wght@400;700&display=swap" rel="stylesheet">
@@ -83,7 +83,7 @@
       </a>
       <div class="drawer-divider"></div>
       <span class="drawer-section-label">Workshop</span>
-      <a href="sec00.html" class="drawer-link">
+      <a href="sec00.html" class="drawer-link active">
         <span class="material-symbols-outlined">person_add</span> §0 アカウント作成手順
       </a>
       <a href="sec01.html" class="drawer-link">
@@ -92,7 +92,7 @@
       <a href="sec02.html" class="drawer-link">
         <span class="material-symbols-outlined">school</span> §2 GitHubの基礎
       </a>
-      <a href="sec03.html" class="drawer-link active">
+      <a href="sec03.html" class="drawer-link">
         <span class="material-symbols-outlined">history_edu</span> §3 教材の「最新版どれ?」をなくす
       </a>
       <a href="sec04.html" class="drawer-link">
@@ -111,11 +111,10 @@
   </div>
   <section class="page-hero">
     <div class="container">
-      <span class="section-label">SECTION 03</span>
-      <h1 class="page-hero-title">§3　ハンズオン① 教材の「最新版どれ?」をなくす</h1>
+      <span class="section-label">SECTION 00</span>
+      <h1 class="page-hero-title">§0　アカウント作成手順 — 画面つき5ステップ</h1>
       <p class="page-hero-description">
-        学年フォルダの「プリント_最終_改2_本当に最終.docx」問題を、リポジトリ1つで終わらせます。
-        置き場所は1つ、歴代の版は履歴に、変更の理由はコミットメッセージに。教科・分掌単位でそのまま使える型です。
+        実際の画面を見ながら、GitHubのアカウントを作ります。ここではGoogleアカウント連携で作る手順を紹介します（パスワードを増やさずに済み、学校でのGoogle運用とも相性がよい方法です）。所要3分。
       </p>
     </div>
   </section>
@@ -123,73 +122,76 @@
   <section class="section">
     <div class="container container-content">
 
-      <p><strong>校務での使いどころ: </strong>学年・教科で共有するプリント、指導案、行事マニュアルの原本管理。</p>
-      <p><strong>使う機能: </strong>リポジトリ＋アップロード＋履歴（History）＋共同編集者（Collaborators）</p>
-
-      <div class="section-header" id="s3-1">
-        <span class="section-label">3-1</span>
-        <h2 class="section-title">完成イメージ</h2>
+      <div class="notice-box">
+        <span class="material-symbols-outlined notice-icon">info</span>
+        <div class="notice-content">
+          <strong>先に決めておくこと：</strong>どのGoogleアカウントで作るかです。GitHubのアカウントは転勤しても持ち歩く個人の資産なので、<strong>個人のGoogleアカウント推奨</strong>です（考え方は<a href="sec01.html">§1-1</a>参照）。メールアドレス＋パスワードで作る従来の方法でも問題ありません（<a href="sec01.html">§1-2</a>に手順があります）。
+        </div>
       </div>
+
+      <div class="section-header" id="s0-1" style="margin-top: var(--space-12);">
+        <span class="section-label">STEP 1</span>
+        <h2 class="section-title">GitHubのサイトを開く</h2>
+      </div>
+      <p>検索で「github」と入れ、<strong>GitHub Japan（github.co.jp）</strong>を開きます。アドレスバーに <strong>github.co.jp</strong> と直接入力してもかまいません（検索結果には広告が混ざることがあるため、URL直打ちのほうが確実です）。</p>
+      <figure class="screenshot">
+        <img src="img/account/01_google_search.png" alt="Googleで「github」を検索し、GitHub Japanの検索結果を開く画面">
+        <figcaption>STEP 1：検索結果の「GitHub」をクリック</figcaption>
+      </figure>
+
+      <div class="section-header" id="s0-2" style="margin-top: var(--space-16);">
+        <span class="section-label">STEP 2</span>
+        <h2 class="section-title">「GitHubに登録する」をクリック</h2>
+      </div>
+      <p>トップページ中央の緑のボタン<strong>「GitHubに登録する」</strong>をクリックします。英語ページに切り替わりますが、入力するのはこの後の1画面だけです。</p>
+      <figure class="screenshot">
+        <img src="img/account/02_github_top.png" alt="GitHubトップページの「GitHubに登録する」ボタン">
+        <figcaption>STEP 2：トップページ中央の登録ボタン</figcaption>
+      </figure>
+
+      <div class="section-header" id="s0-3" style="margin-top: var(--space-16);">
+        <span class="section-label">STEP 3</span>
+        <h2 class="section-title">「Continue with Google」を選ぶ</h2>
+      </div>
+      <p>登録画面の最上部にある<strong>「Continue with Google」</strong>をクリックし、使うGoogleアカウントを選びます。メール欄・パスワード欄は入力不要になります。ふだん使いのブラウザに複数のGoogleアカウントが入っている場合は、<strong>どのアカウントを選んだか</strong>をメモしておきましょう（次回のログインで同じものを選びます）。</p>
+      <figure class="screenshot">
+        <img src="img/account/03_continue_with_google.png" alt="Sign up for GitHub画面のContinue with Googleボタン">
+        <figcaption>STEP 3：フォーム最上部の「Continue with Google」</figcaption>
+      </figure>
+
+      <div class="section-header" id="s0-4" style="margin-top: var(--space-16);">
+        <span class="section-label">STEP 4</span>
+        <h2 class="section-title">ユーザー名を決めて「Create account」</h2>
+      </div>
+      <p>メール欄にはGoogleアカウントのアドレスが自動で入ります。自分で決めるのは<strong>Username（ユーザー名）</strong>だけです。</p>
       <ul class="bullet-list">
-        <li>リポジトリ <strong>sugaku-2nen</strong>（数学・中2教材）が非公開である</li>
-        <li>フォルダが単元ごとに分かれている（01_正負の数、02_文字式、…）</li>
-        <li>どのプリントも、Historyを見れば「いつ・誰が・なぜ変えたか」がわかる</li>
-        <li>教科の同僚2人が共同編集者として入っている</li>
+        <li>半角英数とハイフンのみ。<strong>本名フルネームや学校名は入れない</strong>（URLとして全世界に公開されます。決め方は<a href="sec01.html">§1-1</a>）</li>
+        <li>Your Country/Region は <strong>Japan</strong> のままでOK</li>
+        <li>GitHub Copilot のチェックは<strong>任意</strong>です（後から変更できます）。Email preferences（お知らせメール）はオフのままで問題ありません</li>
       </ul>
+      <p>入力欄の右端に緑のチェックが付いたら、<strong>「Create account」</strong>をクリックします。</p>
+      <figure class="screenshot">
+        <img src="img/account/04_username.png" alt="ユーザー名と国を確認してCreate accountを押す画面">
+        <figcaption>STEP 4：Usernameに緑のチェックが付いたら「Create account」</figcaption>
+      </figure>
 
-      <div class="section-header" id="s3-2" style="margin-top: var(--space-16);">
-        <span class="section-label">3-2</span>
-        <h2 class="section-title">手順1　箱を作ってファイルを入れる</h2>
+      <div class="section-header" id="s0-5" style="margin-top: var(--space-16);">
+        <span class="section-label">STEP 5</span>
+        <h2 class="section-title">ダッシュボードが出たら完了</h2>
       </div>
-      <ol class="bullet-list numbered">
-        <li>New repository → 名前は <strong>教科-学年</strong> の形（例: sugaku-2nen）→ <strong>Private</strong> → README付きで作成</li>
-        <li><strong>Add file → Upload files</strong> を開き、手元のプリント（Word・PDF・画像）を<strong>ドラッグ&ドロップ</strong></li>
-        <li>コミットメッセージに「2学期分の既存プリントを一括登録」と書いて確定</li>
-        <li>フォルダを作りたいときは、Add file → Create new file でファイル名の前に「01_正負の数/」のように<strong>フォルダ名＋スラッシュ</strong>を付けます</li>
-      </ol>
+      <p>この画面（Home／Dashboard）が表示されたら、アカウント作成は完了です。左上の「Create repository」ボタンは§2で使うので、今は押さなくてかまいません。</p>
+      <figure class="screenshot">
+        <img src="img/account/05_dashboard.png" alt="アカウント作成完了後に表示されるGitHubのダッシュボード画面">
+        <figcaption>STEP 5：ログイン後のダッシュボード。これが「作成完了」の目印</figcaption>
+      </figure>
 
-      <div class="section-header" id="s3-3" style="margin-top: var(--space-16);">
-        <span class="section-label">3-3</span>
-        <h2 class="section-title">手順2　差し替えて、履歴を見る</h2>
-      </div>
-      <ol class="bullet-list numbered">
-        <li>差し替えたいファイルのあるフォルダで Upload files → 同じファイル名で上げ直す（自動で「新しい版」になります）</li>
-        <li>コミットメッセージ: <strong>「第3問を差し替え: 試験範囲の変更に合わせるため」</strong></li>
-        <li>ファイル一覧上部の <strong>History</strong> を開く——歴代の版と理由が一覧になり、どの版にも戻せます</li>
-      </ol>
-      <div class="notice-box">
-        <span class="material-symbols-outlined notice-icon">description</span>
-        <div>
-          <strong>WordとMarkdownの使い分け。</strong>Word・PDFも履歴管理はできますが、「どこが変わったか」の行単位比較はできません。<strong>これから新しく作る配布文書・手順書はMarkdown（.md）で書く</strong>と、変更箇所が色付きで見えるようになります。§2のテンプレの記法だけで十分です。
+      <div class="notice-box" style="margin-top: var(--space-12);">
+        <span class="material-symbols-outlined notice-icon">shield</span>
+        <div class="notice-content">
+          <strong>作ったら、その足で安全設定へ。</strong>アカウントは作って終わりではありません。<a href="sec01.html">§1「はじめる前のチェック」</a>で二段階認証などの安全設定を済ませてから、§2の最初のリポジトリ作成に進んでください。
         </div>
       </div>
 
-      <div class="section-header" id="s3-4" style="margin-top: var(--space-16);">
-        <span class="section-label">3-4</span>
-        <h2 class="section-title">手順3　同僚を招待する</h2>
-      </div>
-      <ol class="bullet-list numbered">
-        <li>リポジトリの <strong>Settings → Collaborators → Add people</strong></li>
-        <li>同僚のユーザー名を入力して招待（相手にメールが届き、承認すると編集できるようになります）</li>
-        <li>招待した人にも§2の「コミットメッセージの型」を共有しておく——ここを揃えるのが運用のコツです</li>
-      </ol>
-
-      <div class="notice-box">
-        <span class="material-symbols-outlined notice-icon">gpp_maybe</span>
-        <div>
-          <strong>置いてはいけないもの。</strong>Privateでも、成績・名簿・住所・顔写真など<strong>個人情報はリポジトリに置かない</strong>。GitHubは教材と手順書の箱、個人情報は校務支援システムの中——この線引きを最初に学年で合意してください。
-        </div>
-      </div>
-
-      <div class="work-section">
-        <h3>ワーク — 自分の「最新版どれ?」を1つ持ち込む</h3>
-        <p>いま手元で版が散らかっているファイルを1つ選び、リポジトリを作って登録→1回差し替え→Historyで確認、まで回してください（10分）。終わったら隣の人とHistoryを見せ合い、コミットメッセージが「未来の自分に通じるか」を確かめます。</p>
-      </div>
-
-      <div class="page-nav">
-        <a href="sec02.html"><span class="material-symbols-outlined">arrow_back</span> §2 GitHubの基礎</a>
-        <a href="sec04.html">§4 教材ページを5分でWeb公開 <span class="material-symbols-outlined">arrow_forward</span></a>
-      </div>
     </div>
   </section>
 
