@@ -17,6 +17,7 @@ PAGES = [
     ("sec07",  "SECTION 07",  "shield",      "§7 生徒に使わせる日のルールづくり"),
     ("screens", "REFERENCE",  "monitor",     "図解 画面の見方"),
     ("faq",    "Q&A",         "help",        "Q&A よくある質問"),
+    ("live",   "講師用",       "podium",      "進行モード（講師用）"),
 ]
 
 def nav_html(active):
